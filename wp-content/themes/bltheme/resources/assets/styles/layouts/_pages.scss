@@ -1,0 +1,247 @@
+
+
+// LANDING PAGE
+.home {
+  img.wp-post-image {
+    width: 100%;
+  }
+
+  .wrap .banner {
+    width: 100vw;
+    background-color: $orange;
+    color: $white;
+    margin: 20px 0 20px calc((100% - 100vw) / 2);
+    padding: 20px 0;
+    font-weight: 300;
+    font-size: 1.2rem;
+
+    h1 {
+      font-size: 1.2rem;
+      text-transform: uppercase;
+    }
+
+    .intro {
+      padding: 0;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  @media (min-width: $screen-sm-min) {
+    .wrap .banner {
+      padding: 40px;
+      font-size: 36px;
+      margin: 20px 0 0 calc((100% - 100vw) / 2);
+    }
+  }
+}
+
+
+
+.page-template-landing-page {
+  @media (min-width: $screen-md-min) {
+    .wrap {
+      .banner .intro,
+      .content {
+        width: 83%;
+        margin: 0 auto;
+      }
+
+      .banner {
+        font-size: 1.5rem;
+
+        h1 {
+          display: none;
+        }
+
+        .intro {
+          padding: 0 15px;
+        }
+      }
+    }
+  }
+}
+
+// ABOUT LIST
+.about-list {
+  img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .btn {
+    display: block;
+    background-color: $light-blue;
+    border-radius: 0;
+    color: $white;
+    border: 0;
+    margin-top: 5px;
+
+    &.team {
+      background-color: $blue;
+    }
+
+    &.partners {
+      background-color: $dark-blue;
+    }
+  }
+}
+
+// HOME SLIDER
+.wrap.container .home-slider {
+  .owl-item {
+    .item {
+      img {
+        height: 250px;
+        object-fit: cover;
+      }
+
+      .content {
+        width: 100%;
+        margin: 20px auto;
+        color: $blue;
+        text-align: center;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        height: 80px;
+      }
+    }
+  }
+
+  .owl-nav {
+    width: 100%;
+    position: absolute;
+    margin: 0 auto;
+    top: 50%;
+
+    button {
+      &.owl-prev,
+      &.owl-next {
+        top: auto;
+        bottom: 35px;
+        background-repeat: no-repeat;
+
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+
+    button.owl-prev {
+      //background-image: url(../images/blue_slider_arrow_left.svg);
+    }
+
+    button.owl-next {
+      //background-image: url(../images/blue_slider_arrow_right.svg);
+    }
+  }
+
+  @media (max-width: $screen-sm-min) {
+    .owl-nav {
+      button {
+        &.owl-prev,
+        &.owl-next {
+          height: 30px;
+          width: 15px;
+        }
+
+        &.owl-prev {
+          left: -10px;
+        }
+
+        &.owl-next {
+          right: -10px;
+        }
+      }
+    }
+
+    .owl-item {
+      padding: 0 20px;
+    }
+  }
+
+  @media (min-width: $screen-sm-min) {
+    .owl-item {
+      .item {
+        img {
+          height: 350px;
+        }
+
+        .content {
+          font-size: 24px;
+          height: 120px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: $screen-md-min) {
+    .owl-item {
+      padding: 0 51px;
+
+      .item {
+        padding: 0 20px;
+
+        img {
+          height: 450px;
+        }
+
+        .content {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+// RESEARCH LIST
+.research-list {
+  .column {
+    margin-bottom: 40px;
+
+    img {
+      height: 70px;
+      width: auto;
+    }
+
+    .title {
+      font-weight: 700;
+
+      &::after {
+        content: ">";
+        color: $orange;
+        padding-left: 5px;
+      }
+
+      &.hide {
+        display: none;
+      }
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  @media (min-width: $screen-md-min) {
+    .column {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+}
+
+// PEOPLE LIST
+.people-list {
+  .social-contact {
+    font-size: 1.2rem;
+
+    a {
+      margin-right: 10px;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+/** Import Bootstrap functions */
+@import "~bootstrap/scss/functions";
+
+$blue: #1565c0;
+$orange: #f5b041;
+$yellow: #f9ca06;
+$blue-gray: #6986a7;
+$light-blue: #56a0d7;
+$lighter-blue: #d9ecf4;
+$text-gray: #737373;
+$dark-blue: #003571;
+$body-color: #333;
+$dark-gray: #454545;
+
+// screen sizes
+$screen-xs-min: 576px;
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+
+$theme-colors: (
+  primary: #525ddc
+);
+
+//
+// Fonts
+//
+$fontawesome: FontAwesome;
+$open-sans: 'Open Sans', sans-serif;
+$font-family-base: $open-sans;
+
+/** Bootstrap navbar fix (https://git.io/fADqW) */
+$navbar-dark-toggler-icon-bg: none;
+$navbar-light-toggler-icon-bg: none;

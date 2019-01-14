@@ -1,0 +1,68 @@
+body {
+
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+label {
+  margin: 0;
+  font-weight: 600;
+}
+
+.wrap {
+  margin-top: 100px;
+  padding-bottom: 70px;
+}
+
+.container {
+  max-width: $screen-lg-min !important;
+}
+
+a,
+button,
+img {
+  &:focus {
+    outline: none;
+  }
+}
+
+// feature image styling for page and post
+.main {
+  .wp-post-image {
+    @media (min-width: $screen-sm-min) {
+      float: right;
+      margin-left: 20px;
+    }
+  }
+}
+
+// GUTENBERG BLOCK STYLES
+.wp-block-media-text {
+  grid-template-columns: 33% auto;
+  align-items: initial;
+  margin-bottom: 40px;
+
+  @media (min-width: $screen-sm-min) {
+    grid-template-columns: 25% auto;
+  }
+}
+
+// BANNER IMAGE
+.banner-image {
+  margin-bottom: 20px;
+}
+
+@media (min-width: $screen-sm-min) {
+  .wrap {
+    margin-top: 120px;
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  .wrap {
+    margin-top: 210px;
+  }
+}

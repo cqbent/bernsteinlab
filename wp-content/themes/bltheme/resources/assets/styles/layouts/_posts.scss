@@ -1,0 +1,234 @@
+.main {
+  article {
+    &.row {
+      margin-bottom: 40px;
+    }
+
+    .column {
+      &.image {
+        margin-bottom: 10px;
+      }
+    }
+
+    header {
+      margin-bottom: 20px;
+    }
+
+    .entry-content .content {
+      //margin: 20px 0;
+      margin-top: 20px;
+    }
+
+    .outlet {
+      float: left;
+      margin-right: 5px;
+    }
+
+    img.alignright {
+      max-width: 500px;
+    }
+
+    .categories {
+      text-transform: uppercase;
+      color: $orange;
+
+      a {
+        color: $orange;
+      }
+    }
+
+    .publication-link,
+    .press-file {
+      margin: 10px 0;
+    }
+  }
+
+  .nav-links {
+    .nav-previous {
+      float: left;
+    }
+
+    .nav-next {
+      float: right;
+    }
+  }
+}
+
+// FACETWP + OTHER FILTERS
+.filter-block {
+  @include clearfix;
+
+  margin-bottom: 40px;
+
+  a.reset {
+    padding: 1px 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: block;
+    float: left;
+    margin: 5px 0;
+  }
+
+  .filter-type {
+    font-size: 0.875rem;
+    margin: 5px 0;
+
+    label {
+      font-weight: 600;
+      padding-right: 10px;
+    }
+
+    .facetwp-facet {
+      display: inline-block;
+      margin: 0;
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+    .filter-type {
+      font-size: 1rem;
+      float: left;
+      margin-right: 40px;
+    }
+  }
+
+  .year-list {
+    list-style: none;
+    margin: 10px 0;
+    padding: 0;
+
+    @include clearfix;
+
+    li {
+      float: left;
+      margin: 0;
+      padding: 0 0 0 10px;
+
+      &::after {
+        content: "|";
+        padding-left: 10px;
+      }
+
+      &:first-child {
+        padding: 0;
+      }
+
+      &:last-child::after {
+        content: "";
+      }
+    }
+  }
+
+  .facetwp-checkbox {
+    display: inline-block;
+    margin-right: 20px;
+  }
+}
+
+// PEOPLE LIST
+.people-list {
+  margin-bottom: 40px;
+
+  .column {
+    margin-bottom: 20px;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  img {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: $screen-xs-min) {
+    img {
+      height: 250px;
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+
+  &.collaborators {
+    h4 {
+      font-size: 1rem;
+    }
+  }
+}
+
+// PUBLICATIONS LIST
+article.publications {
+  align-items: center;
+
+  .entry-title {
+    //margin: 0 5px;
+  }
+
+  .year {
+    margin: 20px 0;
+  }
+
+  .date {
+    &::before {
+      content: "|";
+      display: inline-block;
+      padding: 0 5px;
+    }
+  }
+}
+
+// PRESENTATIONS
+article.presentations {
+  p {
+    //margin: 0;
+  }
+
+  label {
+    font-weight: 600;
+  }
+
+  .city {
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+
+  .presentation-speakers {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+
+    .item,
+    .item-last {
+      display: inline-block;
+    }
+
+    .item::after {
+      content: "; ";
+      display: inline-block;
+      margin-right: 5px;
+    }
+  }
+}
+
+// RESOURCE LIST
+.resource-links {
+  img {
+    margin-bottom: 20px;
+    max-height: 70px;
+    width: auto;
+  }
+
+  a {
+    text-transform: capitalize;
+  }
+
+  @media (min-width: $screen-md-min) {
+    float: right;
+    text-align: right;
+    margin: 0 0 20px 20px;
+  }
+}
