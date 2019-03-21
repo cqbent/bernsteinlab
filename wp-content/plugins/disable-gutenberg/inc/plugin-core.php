@@ -93,7 +93,7 @@ function disable_gutenberg_get_post_types() {
 	
 	$post_types = get_post_types(array(), 'objects');
 	
-	$unset = array('attachment', 'revision', 'nav_menu_item', 'custom_css', 'customize_changeset', 'oembed_cache');
+	$unset = array('attachment', 'revision', 'nav_menu_item', 'custom_css', 'customize_changeset', 'oembed_cache', 'user_request', 'wp_block');
 	
 	$unset = apply_filters('disable_gutenberg_post_types_unset', $unset);
 	
@@ -104,7 +104,7 @@ function disable_gutenberg_get_post_types() {
 		$types[$key]['name']  = $post_type->name;
 		$types[$key]['label'] = $post_type->label;
 		
-		if (in_array($post_type->name, $unset) || !post_type_supports($post_type->name, 'custom-fields')) unset($types[$key]);
+		if (in_array($post_type->name, $unset)) unset($types[$key]);
 		
 	}
 	
@@ -376,7 +376,7 @@ function disable_gutenberg_whitelist_title($post_id = false) {
 		
 	}
 	
-	return in_array($title, $whitelist);
+	return (!empty($title) && in_array($title, $whitelist));
 	
 }
 
