@@ -1,6 +1,6 @@
 <?php
-define('WP_HOME','http://bernstein-dev.mgh.harvard.edu/');
-define('WP_SITEURL','http://bernstein-dev.mgh.harvard.edu/');
+define('WP_HOME','http://bernsteinlab.local/');
+define('WP_SITEURL','http://bernsteinlab.local/');
 define('WP_AUTO_UPDATE_CORE', false);// This setting is required to make sure that WordPress updates can be properly managed in WordPress Toolkit. Remove this line if this WordPress instance is not managed by WordPress Toolkit anymore.
 /**
  * The base configuration for WordPress
@@ -23,22 +23,22 @@ define('WP_AUTO_UPDATE_CORE', false);// This setting is required to make sure th
 
 // ** MySQL settings ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'bb37_wp_fl1pl' );
+define( 'DB_NAME', 'bernstein_lab' );
 
 /** MySQL database username */
-define( 'DB_USER', 'bb37_wp_0wsk3' );
+define( 'DB_USER', 'root' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'a8f9IQ!x5T' );
+define( 'DB_PASSWORD', 'syproot' );
 
 /** MySQL hostname */
-define( 'DB_HOST', 'erisweb-mysql.partners.org:3306' );
+define( 'DB_HOST', 'localhost' );
 
 /** Database Charset to use in creating database tables. */
-define( 'DB_CHARSET', 'utf8' );
+define('DB_CHARSET', 'utf8mb4');
 
 /** The Database Collate type. Don't change this if in doubt. */
-define( 'DB_COLLATE', '' );
+define('DB_COLLATE', '');
 
 /**
  * Authentication Unique Keys and Salts.
@@ -65,7 +65,6 @@ define('NONCE_SALT', '9wgr07i74a-s55Bh#8gu/3s/YK@bQ9%5b#;;#@0;W7*Avy~fq2[qYjY617
  * a unique prefix. Only numbers, letters, and underscores please!
  */
 $table_prefix = '0FS60yxr8_';
-
 
 define('WP_ALLOW_MULTISITE', false);
 
