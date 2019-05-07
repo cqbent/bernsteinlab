@@ -1,204 +1,40 @@
 footer.content-info {
-  color: $white;
-
-  a {
-    color: $white;
-  }
-
-  button {
-    background-color: $yellow;
-    border: none;
-  }
-
-  a.social-link {
-    color: $blue;
-    background: $white;
-    line-height: 25px;
-    width: 25px;
+  .affiliations {
+    max-width: $max-width;
+    margin: 0 auto;
     text-align: center;
-    border-radius: 50%;
-    display: inline-block;
-  }
-
-  .action-items {
-    background: $blue-gray;
-
-    .container {
-      max-width: 100%;
-      padding: 0;
-    }
-
-    .row {
-      .give-now,
-      .subscribe {
-        padding: 20px;
-      }
-    }
-
-    .content {
-      padding: 0 20px;
-    }
-
-    img {
-      float: left;
-      display: block;
-      margin-right: 20px;
-      width: 170px;
-    }
-
-    a {
-      text-decoration: underline;
-    }
-
-    .title {
-      font-size: 24px;
-      text-transform: uppercase;
-      font-weight: 600;
-      display: none;
-    }
-
-    .home & {
-      background: none;
-      padding: 0;
-      max-width: $screen-lg-min;
-      margin-left: auto;
-      margin-right: auto;
-
-      .container {
-        max-width: $screen-lg-min;
-      }
-
-      .row {
-        .give-now {
-          background: none;
-          padding: 0;
-          box-shadow: none;
-        }
-
-        .subscribe {
-          background: none;
-          padding: 0;
-        }
-      }
-
-      .content {
-        background: $orange;
-        padding: 20px;
-      }
-
-      .title {
-        display: block;
-      }
-
-      .give-now {
-        .content {
-          margin-top: -50px;
-        }
-
-        .title {
-          text-align: center;
-        }
-
-        img {
-          float: right;
-        }
-      }
-
-      .subscribe {
-        .content {
-          background: rgba($orange, 0.8);
-          text-align: center;
-        }
-
-        img {
-          float: none;
-          margin: 0 auto;
-        }
-
-        .btn {
-          display: none;
-        }
-      }
-    }
-
-    @media (min-width: $screen-md-min) {
-      //background: rgba($blue-gray, 0.5);
-      margin-bottom: -125px;
-
-      .row {
-        .give-now {
-          background: $blue-gray;
-          padding-left: calc((100vw - #{$screen-lg-min}) / 2);
-          //box-shadow: 5px 0 5px 0 rgba(0, 0, 0, 0.75);
-        }
-
-        .subscribe {
-          background: $blue-gray;
-
-          .content {
-            margin-top: 20px;
-            //margin-left: 40px;
-          }
-          //background: rgba($blue-gray, 0.5);
-        }
-      }
-
-      .home & {
-        //margin-bottom: -75px;
-
-        .row {
-          .content {
-            height: 250px;
-            box-shadow: 5px 5px 5px 0 rgba(102, 102, 102, 0.75);
-          }
-        }
-      }
-    }
-  }
-
-  .twitter {
-    background-color: $light-blue;
-    padding: 20px;
-
-    p {
-      margin: 0;
-    }
-
+    padding: 40px 20px;
     h3 {
+      padding-top: 20px;
+      border-top: 1px $gray solid;
       text-transform: uppercase;
-      max-width: 1170px;
-      margin: 0 auto;
-      padding: 0 75px;
-      font-size: 1rem;
+      font-weight: 700;
+      font-size: 1.25rem;
     }
-
-    a.social-link {
-      color: $light-blue;
-      margin-right: 10px;
+    img {
+      height: 60px;
+      width: auto;
     }
-
-    .ctf {
+    ul {
       max-width: $screen-sm-min;
-
-      .owl-nav {
-        button {
-          top: calc(50% - 50px);
-        }
+      list-style: none;
+      margin: 0 auto;
+      padding: 0;
+      @include clearfix;
+      li {
+        //float: left;
+        padding: 20px;
       }
     }
-
-    @media (min-width: $screen-md-min) {
-      padding: 150px 20px 0 20px;
-    }
   }
-
   .site-info {
-    background-color: $blue;
+    background-color: $gray;
     padding: 20px 0;
     font-size: 14px;
-
-    .row {
-      align-items: center;
+    color: $white;
+    //background-color: $gray;
+    a {
+      color: $white;
     }
 
     .logo,
@@ -213,22 +49,8 @@ footer.content-info {
       }
     }
 
-    .tagline {
-      text-align: center;
-      text-transform: uppercase;
-      font-weight: 600;
-      font-size: 21px;
-      margin: 20px 0;
-    }
-
     .contact {
-      font-size: 14px;
-    }
-
-    .social {
-      position: absolute;
-      right: 20px;
-      text-align: right;
+      //font-size: 14px;
     }
 
     .sidebar-navigation {
@@ -254,16 +76,10 @@ footer.content-info {
     }
 
     @media (min-width: $screen-md-min) {
-      .social {
-        position: relative;
-        text-align: center;
-        right: auto;
-      }
-
       .footer-nav {
         .menu-footer-menu {
           li {
-            text-align: right;
+            //text-align: right;
           }
         }
       }

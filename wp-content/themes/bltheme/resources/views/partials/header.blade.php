@@ -14,6 +14,6 @@
         {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav', 'container_id' => 'navbar', 'container_class' => 'menu-primary collapse fade']) !!}
       @endif
     </nav>
-    <?php print get_search_form(); ?>
+    <?php //print get_search_form(); ?>
   </div>
 </header>

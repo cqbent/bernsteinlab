@@ -1,10 +1,143 @@
+.page {
+  // research landing page
+  &.research {
+    .main {
+      max-width: $max-width;
+    }
+    .page-content {
+      width: 100vw;
+      margin-left: -15px;
+      padding: 0 15px;
+      .feature-box {
+        padding: 40px 15px;
+        background: $green;
+        color: $white;
+        margin-bottom: 20px;
+        .feature-text {
+          max-width: $max-width;
+          margin: 0 auto;
+        }
+      }
+      .research-list {
+        .column {
+          background-color: $light-gray;
+          padding: 20px 15px;
+          margin-bottom: 20px;
+          .row {
+            margin: 0 auto;
+            max-width: $screen-md-min;
+            .content {
+              .title {
+                font-weight: 700;
+              }
+            }
+          }
+        }
+      }
+      @media (min-width: $screen-sm-min) {
+        .research-list {
+          .row {
+            .image {
+              flex: 0 0 220px;
+              padding-right: 20px;
+            }
+            .content {
+              flex: 0 0 calc(100% - 220px);
+            }
+          }
+        }
+      }
+      @media (min-width: $screen-lg-min) {
+        margin-left: calc((#{$max-width} - 100vw)/2);
+        .feature-box {
+          padding: 40px 0;
+          .feature-text {
+            padding-right: 220px;
+          }
+        }
+        .research-list {
+          .column {
+            padding: 20px 0;
+          }
+        }
 
-
-// LANDING PAGE
-.home {
-  img.wp-post-image {
-    width: 100%;
+      }
+    }
   }
+}
+
+// HOME PAGE
+.home {
+  .wrap.container {
+    max-width: 100% !important;
+    padding: 0;
+    .main {
+      max-width: 100%;
+      padding-top: 0;
+    }
+  }
+  .breadcrumbs {
+    display: none;
+  }
+  .home-banner {
+    position: relative;
+    height: 600px;
+    img.wp-post-image {
+      object-fit: cover;
+      height: 100%;
+    }
+    .content {
+      position: absolute;
+      max-width: $screen-md-min;
+      left: calc((100% - #{$screen-md-min}) / 2);
+      top: calc(50% - 100px);
+      text-align: center;
+      .tagline {
+        font-size: 3rem;
+        font-weight: 700;
+        color: $white;
+      }
+      .btn-primary {
+        width: 250px;
+      }
+    }
+  }
+
+  .latest-news {
+    padding-bottom: 30px;
+    background-color: $light-gray;
+    .row {
+      .column {
+        padding-top: 15px;
+        background-color: $light-gray;
+        img {
+          //border: 15px $light-gray solid;
+          //border-bottom: none;
+        }
+        @media (min-width: $screen-md-min) {
+          margin-right: 15px;
+          flex: 0 0 calc(33.3333% - 15px);
+        }
+      }
+    }
+  }
+  .research {
+    padding: 0 15px;
+    margin-top: 20px;
+
+    .research-list {
+      .image {
+        height: 200px;
+        img {
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+
 
   .wrap .banner {
     width: 100vw;
@@ -30,6 +163,19 @@
   }
 
   @media (min-width: $screen-sm-min) {
+    .home-banner {
+      .content {
+
+      }
+    }
+    .latest-news {
+      position: relative;
+      .row {
+        .column {
+          margin-top: -100px;
+        }
+      }
+    }
     .wrap .banner {
       padding: 40px;
       font-size: 36px;
@@ -198,42 +344,6 @@
   }
 }
 
-// RESEARCH LIST
-.research-list {
-  .column {
-    margin-bottom: 40px;
-
-    img {
-      height: 70px;
-      width: auto;
-    }
-
-    .title {
-      font-weight: 700;
-
-      &::after {
-        content: ">";
-        color: $orange;
-        padding-left: 5px;
-      }
-
-      &.hide {
-        display: none;
-      }
-    }
-
-    p {
-      margin: 0;
-    }
-  }
-
-  @media (min-width: $screen-md-min) {
-    .column {
-      padding-left: 25px;
-      padding-right: 25px;
-    }
-  }
-}
 
 // PEOPLE LIST
 .people-list {

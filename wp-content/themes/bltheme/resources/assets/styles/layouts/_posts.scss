@@ -126,8 +126,14 @@
 }
 
 // PEOPLE LIST
-.people-list {
+.main .people-list {
   margin-bottom: 40px;
+
+  .row {
+    background-color: $light-gray;
+    margin: 10px 0;
+    padding: 20px 10px;
+  }
 
   .column {
     margin-bottom: 20px;
@@ -141,14 +147,15 @@
 
   img {
     width: 100%;
-    padding-bottom: 10px;
+    float: none;
+    margin: 0;
   }
 
   @media (min-width: $screen-xs-min) {
     img {
-      height: 250px;
-      object-fit: cover;
-      object-position: top;
+      //height: 250px;
+      //object-fit: cover;
+      //object-position: top;
     }
   }
 
@@ -177,6 +184,15 @@ article.publications {
       display: inline-block;
       padding: 0 5px;
     }
+  }
+}
+
+// RESEARCH POSTS
+article.research {
+  .wp-post-image {
+    max-width: 300px;
+    float: right;
+    margin-left: 20px;
   }
 }
 
@@ -231,4 +247,9 @@ article.presentations {
     text-align: right;
     margin: 0 0 20px 20px;
   }
+}
+
+// submenu
+.submenu-navigation {
+
 }

@@ -1,22 +1,30 @@
 /** Import Bootstrap functions */
 @import "~bootstrap/scss/functions";
 
-$blue: #1565c0;
+$blue: #29B6F6;
 $orange: #f5b041;
 $yellow: #f9ca06;
 $blue-gray: #6986a7;
 $light-blue: #56a0d7;
 $lighter-blue: #d9ecf4;
 $text-gray: #737373;
+$text-blue: #0288D1;
 $dark-blue: #003571;
 $body-color: #333;
+$gray: #546E7A;
 $dark-gray: #454545;
+$light-gray: #e8edef;
+$purple: #5E35B1;
+$green: #26A69A;
+$lime-green: #D4E157;
+$text-black: #222222;
 
 // screen sizes
 $screen-xs-min: 576px;
 $screen-sm-min: 768px;
 $screen-md-min: 992px;
 $screen-lg-min: 1200px;
+$max-width: calc(#{$screen-lg-min} - 30px);
 
 $theme-colors: (
   primary: #525ddc
@@ -26,8 +34,9 @@ $theme-colors: (
 // Fonts
 //
 $fontawesome: FontAwesome;
-$open-sans: 'Open Sans', sans-serif;
-$font-family-base: $open-sans;
+$roboto: 'Roboto', sans-serif;
+$roboto-condensed: 'Roboto Condensed', sans-serif;
+$font-family-base: $roboto;
 
 /** Bootstrap navbar fix (https://git.io/fADqW) */
 $navbar-dark-toggler-icon-bg: none;

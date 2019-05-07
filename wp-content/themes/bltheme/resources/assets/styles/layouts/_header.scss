@@ -4,17 +4,24 @@ header.banner {
   top: 0;
   background-color: $white;
   z-index: 2;
-  margin-bottom: 20px;
   min-height: 100px;
+  font-family: $roboto-condensed;
 
   .admin-bar & {
     top: 32px;
   }
 
   .container {
-    padding: 10px 0 0 0;
+    padding: 0 0 20px 0;
     position: relative;
     margin: 0 auto;
+    &:before {
+      content: "";
+      height: 5px;
+      margin: 0 15px 20px 15px;
+      background-color: $blue;
+      display: block;
+    }
   }
 
   .brand {
@@ -153,6 +160,7 @@ header.banner {
       bottom: 0;
       right: 0;
 
+
       .navbar-toggler {
         display: none;
       }
@@ -174,12 +182,12 @@ header.banner {
             width: auto;
             border: none;
             padding: 0 10px;
-            font-weight: 600;
+            font-weight: normal;
 
             a {
               position: relative;
               padding: 10px 0;
-              color: $blue;
+              color: $text-black;
 
               &:hover {
                 color: $orange;
@@ -188,23 +196,6 @@ header.banner {
 
             &.alignright {
               margin-left: auto;
-            }
-
-            &:hover,
-            &.current-menu-item,
-            &.current-menu-ancestor,
-            &.current-page-ancestor {
-              a {
-                &::after {
-                  content: "";
-                  position: absolute;
-                  bottom: 0;
-                  left: 0;
-                  height: 4px;
-                  width: 100%;
-                  background-color: $orange;
-                }
-              }
             }
 
             .sub-menu {
@@ -256,6 +247,7 @@ header.banner {
   }
 
   @media (min-width: $screen-md-min) {
+    border-bottom: 25px $green solid;
     .brand {
       img {
         width: 450px;
