@@ -14,6 +14,7 @@
 add_action( 'init', 'research_post_type' );
 add_action( 'init', 'people_post_type' );
 add_action( 'init', 'publications_post_type' );
+add_action( 'init', 'lab_life_post_type' );
 add_action('init', 'people_roles_taxonomy');
 /**
  * Research Project Post Type
@@ -71,6 +72,9 @@ function people_post_type() {
 	);
 }
 
+/**
+ * People roles taxonomy
+ */
 function people_roles_taxonomy() {
 	register_taxonomy('roles', 'people',
 		array(
@@ -120,6 +124,30 @@ function publications_post_type() {
 			'taxonomies' => array('category'),
 			'not-found'    => __( 'Nothing was found. what to do?' ),
 			'menu_icon'    => 'dashicons-book'
+		)
+	);
+}
+
+function lab_life_post_type() {
+	register_post_type( 'lablife',
+		array(
+			'labels'       => array(
+				'name'          => __( 'Lab Life' ),
+				'singular_name' => __( 'Lab Life' )
+			),
+			'public'       => true,
+			'has_archive'  => false,
+			'rewrite'      => array('slug' => 'people/lablife', 'with_front' => false),
+			'hierarchical' => false,
+			'supports'     => array(
+				'title',
+				'author',
+				'custom-fields',
+				'editor',
+				'thumbnail'
+			),
+			'not-found'    => __( 'Nothing was found. what to do?' ),
+			'menu_icon'    => 'dashicons-palmtree'
 		)
 	);
 }
@@ -353,3 +381,43 @@ function bernstein_research_publications($object) {
 	}
 	return $output;
 }
+
+function bernstein_lab_life_list() {
+	$output = '';
+	$logo   = '<img src="' . plugin_dir_url( __FILE__ ) . '/assets/images/bernstein_stripe.jpg" />';
+	$args   = array(
+		'post_type'      => 'lablife',
+		'post_status'    => 'publish',
+		'posts_per_page' => -1
+	);
+	$query  = new \WP_Query( $args );
+	if ( $query->have_posts() ) {
+		$output = '
+      <div class="container">
+        <div class="row">';
+		while ( $query->have_posts() ) {
+			$query->the_post();
+			$img = get_the_post_thumbnail();
+			if ( ! $img ) {
+				$img = $logo;
+			}
+			$output .= '
+	        <div class="col-sm-4 column">
+	          <a href="' . get_the_permalink() . '">' . $img . '</a>
+	        </div>
+	        <div class="col-sm-8">
+              <h4 class="title">
+	            <a href="' . get_the_permalink() . '">' . get_the_title() . '</a>
+	          </h4>
+	          <div class="date">' . get_the_date( 'F Y' ) . '</div>
+	          <div class="excerpt">' . wp_trim_excerpt() . '</div>
+	        </div>
+      ';
+		}
+		$output .= '</div></div>';
+		wp_reset_postdata();
+	}
+
+	return $output;
+}
+add_shortcode( 'lab_life_list', 'bernstein_lab_life_list' );

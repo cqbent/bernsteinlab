@@ -1,6 +1,6 @@
 <?php
-define('WP_HOME','http://bernsteinlab.local/');
-define('WP_SITEURL','http://bernsteinlab.local/');
+define('WP_HOME','https://bernstein-dev.mgh.harvard.edu');
+define('WP_SITEURL','https://bernstein-dev.mgh.harvard.edu');
 define('WP_AUTO_UPDATE_CORE', false);// This setting is required to make sure that WordPress updates can be properly managed in WordPress Toolkit. Remove this line if this WordPress instance is not managed by WordPress Toolkit anymore.
 /**
  * The base configuration for WordPress
@@ -23,19 +23,19 @@ define('WP_AUTO_UPDATE_CORE', false);// This setting is required to make sure th
 
 // ** MySQL settings ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'bernstein_lab' );
+define( 'DB_NAME', 'bb37_wp_fl1pl' );
 
 /** MySQL database username */
-define( 'DB_USER', 'root' );
+define( 'DB_USER', 'bb37_wp_0wsk3' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'syproot' );
+define( 'DB_PASSWORD', 'a8f9IQ!x5T' );
 
 /** MySQL hostname */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', 'erisweb-mysql.partners.org:3306' );
 
 /** Database Charset to use in creating database tables. */
-define('DB_CHARSET', 'utf8mb4');
+define('DB_CHARSET', 'utf8');
 
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
@@ -73,6 +73,8 @@ define('WP_ALLOW_MULTISITE', false);
 /** Absolute path to the WordPress directory. */
 if ( ! defined( 'ABSPATH' ) )
 	define( 'ABSPATH', dirname( __FILE__ ) . '/' );
+
+define('CONCATENATE_SCRIPTS', false);
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
