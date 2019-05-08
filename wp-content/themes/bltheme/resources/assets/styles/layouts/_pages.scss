@@ -120,12 +120,19 @@
         }
       }
     }
+    .title {
+      font-weight: 700;
+
+    }
   }
   .research {
     padding: 0 15px;
     margin-top: 20px;
 
     .research-list {
+      .title {
+        font-weight: 700;
+      }
       .image {
         height: 200px;
         img {

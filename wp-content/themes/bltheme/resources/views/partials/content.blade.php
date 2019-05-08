@@ -4,6 +4,6 @@
     @include('partials/entry-meta')
   </header>
   <div class="entry-summary">
-    @php the_excerpt() @endphp
+    @php print wp_trim_excerpt() @endphp
   </div>
 </article>

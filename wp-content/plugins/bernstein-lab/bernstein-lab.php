@@ -14,7 +14,7 @@
 add_action( 'init', 'research_post_type' );
 add_action( 'init', 'people_post_type' );
 add_action( 'init', 'publications_post_type' );
-
+add_action('init', 'people_roles_taxonomy');
 /**
  * Research Project Post Type
  */
@@ -67,6 +67,27 @@ function people_post_type() {
 			'taxonomies' => array('category'),
 			'not-found'    => __( 'Nothing was found. what to do?' ),
 			'menu_icon'    => 'dashicons-groups'
+		)
+	);
+}
+
+function people_roles_taxonomy() {
+	register_taxonomy('roles', 'people',
+		array(
+			'labels'            => array(
+				'name'          => 'People Roles',
+				'singular_name' => 'Role',
+			),
+			'rewrite'           => array(
+				'slug'       => 'role',
+				'with_front' => FALSE
+			),
+			'public'            => TRUE,
+			'show_ui'           => TRUE,
+			'show_admin_column' => TRUE,
+			'show_in_nav_menus' => TRUE,
+			'query_var'         => TRUE,
+			'hierarchical'      => TRUE
 		)
 	);
 }
@@ -155,7 +176,7 @@ function bernstein_latest_news() {
           <div class="title">
             <a href="' . get_the_permalink() . '">' . get_the_title() . '</a>
           </div>
-          <div class="excerpt">' . get_the_excerpt() . '</div>
+          <div class="excerpt">' . wp_trim_excerpt() . '</div>
         </div>
       ';
 		}
@@ -186,6 +207,7 @@ function bernstein_research_list($attributes) {
 	  	<div class="research-list row">';
 		while ( $query->have_posts() ) {
 			$query->the_post();
+			//$excerpt = substr(strip_tags(get_the_content()), 0, 100) . '... <a href="' . get_the_permalink() . '">Read More</a>';
 			$output .= '
 			<div class="col-md-'.$atts['cols'].' column">
 			  <div class="row no-gutters">
@@ -194,7 +216,7 @@ function bernstein_research_list($attributes) {
 				  </div>
 				  <div class="content">
 					  <div class="title"><a href="' . get_the_permalink() . '">'. get_the_title() . '</a></div>
-					  <div class="excerpt">' . get_the_excerpt(). '</div>
+					  <div class="excerpt">' . wp_trim_excerpt() . '</div>
 				  </div>
 			  </div>
 			</div>
@@ -211,8 +233,36 @@ add_shortcode( 'research_list', 'bernstein_research_list' );
 /**
  * People list
  */
-function bernstein_people_list() {
+
+function bernstein_people_by_role() {
 	$output = '';
+	// first get taxonomy terms
+	$roles = get_terms('roles');
+	// next iterate thru each role
+	foreach($roles as $role) {
+		$args = array(
+			'post_type'   => 'people',
+			'post_status' => 'publish',
+			'posts_per_page' => -1,
+			'tax_query'   => array(
+				array(
+					'taxonomy' => 'roles',
+					'terms'    => $role,
+					'field'    => 'term_id'
+				)
+			)
+		);
+		$list = bernstein_people_list($args);
+		if ($list) {
+			$output .= '<h3>'.$role->name.'</h3>'.$list;
+		}
+	}
+	return '<div class="people-list">' .$output . '</div>';
+}
+
+function bernstein_people_list($args) {
+	$output = '';
+	/*
 	$args  = array(
 		'post_type' => 'people',
 		'post_status' => 'publish',
@@ -220,10 +270,10 @@ function bernstein_people_list() {
 		'orderby' => 'meta_value',
 		'order' => 'ASC'
 	);
+	*/
 	$query = new \WP_Query( $args );
 	if ( $query->have_posts() ) {
 		$role = '';
-		$output = '<div class="people-list">';
 		while ( $query->have_posts() ) {
 			$query->the_post();
 			$interests_content = '';
@@ -243,11 +293,12 @@ function bernstein_people_list() {
 			if ($interests && $interests != 'Uncategorized') {
 				$interests_content = 'Interests: ' . strip_tags($interests);
 			}
-			//var_dump(get_field('role'));
+			/*
 			if ($role != get_field('role')) {
 				$role = get_field('role');
 				$output .= '<h3>'.$role[0].'</h3>';
 			}
+			*/
 			$output       .= '
 		    <div class="row">
 		    	<div class="col-md-5">
@@ -264,14 +315,14 @@ function bernstein_people_list() {
 		    </div>
 		  ';
 		}
-		$output .= '</div>';
+		//$output .= '</div>';
 		wp_reset_postdata();
 	}
 
 	return $output;
 }
 
-add_shortcode( 'people_list', 'bernstein_people_list' );
+add_shortcode( 'people_list', 'bernstein_people_by_role' );
 
 function bernstein_research_people($object) {
 	$output = '';
