@@ -44,6 +44,9 @@ img {
   .main {
     max-width: 890px;
     padding-top: 10px;
+    .page-header, article header h1.entry-title, .entry-header {
+      margin-top: 40px;
+    }
     .wp-post-image {
       @media (min-width: $screen-sm-min) {
         //float: right;

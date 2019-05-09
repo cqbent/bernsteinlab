@@ -14,7 +14,7 @@
       margin-bottom: 20px;
     }
 
-    .entry-content .content {
+    .entry-content .content, .entry-body {
       //margin: 20px 0;
       margin-top: 20px;
     }
@@ -51,6 +51,13 @@
     .nav-next {
       float: right;
     }
+  }
+}
+
+// archive, blog styling
+.archive, .blog {
+  article {
+    margin-bottom: 30px;
   }
 }
 

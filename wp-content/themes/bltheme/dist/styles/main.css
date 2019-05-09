@@ -14759,7 +14759,15 @@ img:focus {
   padding-top: 10px;
 }
 
-/* line 59, resources/assets/styles/common/_global.scss */
+/* line 47, resources/assets/styles/common/_global.scss */
+
+.content .main .page-header,
+.content .main article header h1.entry-title,
+.content .main .entry-header {
+  margin-top: 40px;
+}
+
+/* line 62, resources/assets/styles/common/_global.scss */
 
 .wp-block-media-text {
   grid-template-columns: 33% auto;
@@ -14770,21 +14778,21 @@ img:focus {
 }
 
 @media (min-width: 768px) {
-  /* line 59, resources/assets/styles/common/_global.scss */
+  /* line 62, resources/assets/styles/common/_global.scss */
 
   .wp-block-media-text {
     grid-template-columns: 25% auto;
   }
 }
 
-/* line 70, resources/assets/styles/common/_global.scss */
+/* line 73, resources/assets/styles/common/_global.scss */
 
 .banner-image {
   margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
-  /* line 75, resources/assets/styles/common/_global.scss */
+  /* line 78, resources/assets/styles/common/_global.scss */
 
   .wrap {
     margin-top: 110px;
@@ -14792,7 +14800,7 @@ img:focus {
 }
 
 @media (min-width: 992px) {
-  /* line 81, resources/assets/styles/common/_global.scss */
+  /* line 84, resources/assets/styles/common/_global.scss */
 
   .wrap {
     margin-top: 130px;
@@ -15922,7 +15930,8 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
 
 /* line 17, resources/assets/styles/layouts/_posts.scss */
 
-.main article .entry-content .content {
+.main article .entry-content .content,
+.main article .entry-body {
   margin-top: 20px;
 }
 
@@ -15971,7 +15980,14 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   float: right;
 }
 
-/* line 58, resources/assets/styles/layouts/_posts.scss */
+/* line 59, resources/assets/styles/layouts/_posts.scss */
+
+.archive article,
+.blog article {
+  margin-bottom: 30px;
+}
+
+/* line 65, resources/assets/styles/layouts/_posts.scss */
 
 .filter-block {
   margin-bottom: 40px;
@@ -15985,7 +16001,7 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   content: "";
 }
 
-/* line 63, resources/assets/styles/layouts/_posts.scss */
+/* line 70, resources/assets/styles/layouts/_posts.scss */
 
 .filter-block a.reset {
   padding: 1px 10px;
@@ -15996,21 +16012,21 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   margin: 5px 0;
 }
 
-/* line 72, resources/assets/styles/layouts/_posts.scss */
+/* line 79, resources/assets/styles/layouts/_posts.scss */
 
 .filter-block .filter-type {
   font-size: 0.875rem;
   margin: 5px 0;
 }
 
-/* line 76, resources/assets/styles/layouts/_posts.scss */
+/* line 83, resources/assets/styles/layouts/_posts.scss */
 
 .filter-block .filter-type label {
   font-weight: 600;
   padding-right: 10px;
 }
 
-/* line 81, resources/assets/styles/layouts/_posts.scss */
+/* line 88, resources/assets/styles/layouts/_posts.scss */
 
 .filter-block .filter-type .facetwp-facet {
   display: inline-block;
@@ -16018,7 +16034,7 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
 }
 
 @media (min-width: 576px) {
-  /* line 88, resources/assets/styles/layouts/_posts.scss */
+  /* line 95, resources/assets/styles/layouts/_posts.scss */
 
   .filter-block .filter-type {
     font-size: 1rem;
@@ -16027,7 +16043,7 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   }
 }
 
-/* line 95, resources/assets/styles/layouts/_posts.scss */
+/* line 102, resources/assets/styles/layouts/_posts.scss */
 
 .filter-block .year-list {
   list-style: none;
@@ -16043,7 +16059,7 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   content: "";
 }
 
-/* line 102, resources/assets/styles/layouts/_posts.scss */
+/* line 109, resources/assets/styles/layouts/_posts.scss */
 
 .filter-block .year-list li {
   float: left;
@@ -16051,39 +16067,39 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   padding: 0 0 0 10px;
 }
 
-/* line 107, resources/assets/styles/layouts/_posts.scss */
+/* line 114, resources/assets/styles/layouts/_posts.scss */
 
 .filter-block .year-list li::after {
   content: "|";
   padding-left: 10px;
 }
 
-/* line 112, resources/assets/styles/layouts/_posts.scss */
+/* line 119, resources/assets/styles/layouts/_posts.scss */
 
 .filter-block .year-list li:first-child {
   padding: 0;
 }
 
-/* line 116, resources/assets/styles/layouts/_posts.scss */
+/* line 123, resources/assets/styles/layouts/_posts.scss */
 
 .filter-block .year-list li:last-child::after {
   content: "";
 }
 
-/* line 122, resources/assets/styles/layouts/_posts.scss */
+/* line 129, resources/assets/styles/layouts/_posts.scss */
 
 .filter-block .facetwp-checkbox {
   display: inline-block;
   margin-right: 20px;
 }
 
-/* line 129, resources/assets/styles/layouts/_posts.scss */
+/* line 136, resources/assets/styles/layouts/_posts.scss */
 
 .main .people-list {
   margin-bottom: 40px;
 }
 
-/* line 132, resources/assets/styles/layouts/_posts.scss */
+/* line 139, resources/assets/styles/layouts/_posts.scss */
 
 .main .people-list .row {
   background-color: #e8edef;
@@ -16091,13 +16107,13 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   padding: 20px 10px;
 }
 
-/* line 138, resources/assets/styles/layouts/_posts.scss */
+/* line 145, resources/assets/styles/layouts/_posts.scss */
 
 .main .people-list .column {
   margin-bottom: 20px;
 }
 
-/* line 142, resources/assets/styles/layouts/_posts.scss */
+/* line 149, resources/assets/styles/layouts/_posts.scss */
 
 .main .people-list h4 {
   font-size: 1.2rem;
@@ -16105,7 +16121,7 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   margin: 0;
 }
 
-/* line 148, resources/assets/styles/layouts/_posts.scss */
+/* line 155, resources/assets/styles/layouts/_posts.scss */
 
 .main .people-list img {
   width: 100%;
@@ -16113,13 +16129,13 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   margin: 0;
 }
 
-/* line 163, resources/assets/styles/layouts/_posts.scss */
+/* line 170, resources/assets/styles/layouts/_posts.scss */
 
 .main .people-list.collaborators h4 {
   font-size: 1rem;
 }
 
-/* line 170, resources/assets/styles/layouts/_posts.scss */
+/* line 177, resources/assets/styles/layouts/_posts.scss */
 
 article.publications {
   -webkit-box-align: center;
@@ -16127,13 +16143,13 @@ article.publications {
           align-items: center;
 }
 
-/* line 177, resources/assets/styles/layouts/_posts.scss */
+/* line 184, resources/assets/styles/layouts/_posts.scss */
 
 article.publications .year {
   margin: 20px 0;
 }
 
-/* line 182, resources/assets/styles/layouts/_posts.scss */
+/* line 189, resources/assets/styles/layouts/_posts.scss */
 
 article.publications .date::before {
   content: "|";
@@ -16141,7 +16157,7 @@ article.publications .date::before {
   padding: 0 5px;
 }
 
-/* line 192, resources/assets/styles/layouts/_posts.scss */
+/* line 199, resources/assets/styles/layouts/_posts.scss */
 
 article.research .wp-post-image {
   max-width: 300px;
@@ -16149,20 +16165,20 @@ article.research .wp-post-image {
   margin-left: 20px;
 }
 
-/* line 205, resources/assets/styles/layouts/_posts.scss */
+/* line 212, resources/assets/styles/layouts/_posts.scss */
 
 article.presentations label {
   font-weight: 600;
 }
 
-/* line 209, resources/assets/styles/layouts/_posts.scss */
+/* line 216, resources/assets/styles/layouts/_posts.scss */
 
 article.presentations .city {
   font-weight: 600;
   font-size: 1.5rem;
 }
 
-/* line 214, resources/assets/styles/layouts/_posts.scss */
+/* line 221, resources/assets/styles/layouts/_posts.scss */
 
 article.presentations .presentation-speakers {
   list-style: none;
@@ -16171,14 +16187,14 @@ article.presentations .presentation-speakers {
   display: inline-block;
 }
 
-/* line 220, resources/assets/styles/layouts/_posts.scss */
+/* line 227, resources/assets/styles/layouts/_posts.scss */
 
 article.presentations .presentation-speakers .item,
 article.presentations .presentation-speakers .item-last {
   display: inline-block;
 }
 
-/* line 225, resources/assets/styles/layouts/_posts.scss */
+/* line 232, resources/assets/styles/layouts/_posts.scss */
 
 article.presentations .presentation-speakers .item::after {
   content: "; ";
@@ -16186,7 +16202,7 @@ article.presentations .presentation-speakers .item::after {
   margin-right: 5px;
 }
 
-/* line 235, resources/assets/styles/layouts/_posts.scss */
+/* line 242, resources/assets/styles/layouts/_posts.scss */
 
 .resource-links img {
   margin-bottom: 20px;
@@ -16194,14 +16210,14 @@ article.presentations .presentation-speakers .item::after {
   width: auto;
 }
 
-/* line 241, resources/assets/styles/layouts/_posts.scss */
+/* line 248, resources/assets/styles/layouts/_posts.scss */
 
 .resource-links a {
   text-transform: capitalize;
 }
 
 @media (min-width: 992px) {
-  /* line 234, resources/assets/styles/layouts/_posts.scss */
+  /* line 241, resources/assets/styles/layouts/_posts.scss */
 
   .resource-links {
     float: right;
