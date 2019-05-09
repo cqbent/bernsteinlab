@@ -165,7 +165,7 @@ add_filter( 'get_the_archive_title', 'filter_category_title' );
 function bernstein_sub_menu($attributes) {
 	$output = '';
 	$args = array(
-		'theme_location' => 'primary',
+		'theme_location' => 'primary_navigation',
 		'container_class' => 'submenu-navigation',
 		'menu_class' => 'menu-submenu',
 		'echo' => FALSE,
@@ -199,11 +199,11 @@ function bernstein_latest_news() {
 			}
 			$output .= '
         <div class="column col-md-4">
-          ' . $img . '
-          <div class="date">' . get_the_date( 'F Y' ) . '</div>
+          <a href="' . get_the_permalink() . '">' . $img . '</a>
           <div class="title">
             <a href="' . get_the_permalink() . '">' . get_the_title() . '</a>
           </div>
+          <div class="date">' . get_the_date( 'F Y' ) . '</div>
           <div class="excerpt">' . wp_trim_excerpt() . '</div>
         </div>
       ';
@@ -393,7 +393,7 @@ function bernstein_lab_life_list() {
 	$query  = new \WP_Query( $args );
 	if ( $query->have_posts() ) {
 		$output = '
-      <div class="container">
+      <div class="lab-life-list container">
         <div class="row">';
 		while ( $query->have_posts() ) {
 			$query->the_post();

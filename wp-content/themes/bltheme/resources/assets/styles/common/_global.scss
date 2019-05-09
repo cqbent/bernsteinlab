@@ -39,16 +39,21 @@ img {
 }
 
 // main content layout
-.main {
-  max-width: 890px;
-  padding-top: 10px;
-  .wp-post-image {
-    @media (min-width: $screen-sm-min) {
-      //float: right;
-      //margin-left: 20px;
+.content {
+  position: relative;
+  .main {
+    max-width: 890px;
+    padding-top: 10px;
+    .wp-post-image {
+      @media (min-width: $screen-sm-min) {
+        //float: right;
+        //margin-left: 20px;
+      }
     }
   }
 }
+
+
 
 // GUTENBERG BLOCK STYLES
 .wp-block-media-text {

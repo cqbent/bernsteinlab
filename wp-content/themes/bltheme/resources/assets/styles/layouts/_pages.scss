@@ -81,21 +81,24 @@
   }
   .home-banner {
     position: relative;
-    height: 600px;
+    height: 300px;
     img.wp-post-image {
       object-fit: cover;
       height: 100%;
     }
     .content {
       position: absolute;
-      max-width: $screen-md-min;
-      left: calc((100% - #{$screen-md-min}) / 2);
       top: calc(50% - 100px);
       text-align: center;
+      width: 100%;
+      max-width: $screen-md-min;
+      padding: 0 15px;
       .tagline {
-        font-size: 3rem;
+        font-size: 2rem;
+        line-height: normal;
         font-weight: 700;
         color: $white;
+        margin-bottom: 10px;
       }
       .btn-primary {
         width: 250px;
@@ -111,8 +114,7 @@
         padding-top: 15px;
         background-color: $light-gray;
         img {
-          //border: 15px $light-gray solid;
-          //border-bottom: none;
+          padding-bottom: 5px;
         }
         @media (min-width: $screen-md-min) {
           margin-right: 15px;
@@ -125,9 +127,10 @@
 
     }
   }
+
   .research {
     padding: 0 15px;
-    margin: 30px 0;
+    margin: 30px auto;
 
     .research-list {
       .column {
@@ -147,8 +150,6 @@
       }
     }
   }
-
-
 
   .wrap .banner {
     width: 100vw;
@@ -175,6 +176,7 @@
 
   @media (min-width: $screen-sm-min) {
     .home-banner {
+      height: 400px;
       .content {
 
       }
@@ -191,6 +193,17 @@
       padding: 40px;
       font-size: 36px;
       margin: 20px 0 0 calc((100% - 100vw) / 2);
+    }
+  }
+  @media (min-width: $screen-md-min) {
+    .home-banner {
+      height: 600px;
+      .content {
+        left: calc((100% - #{$screen-md-min}) / 2);
+        .tagline {
+          font-size: 3rem;
+        }
+      }
     }
   }
 }
@@ -364,5 +377,12 @@
     a {
       margin-right: 10px;
     }
+  }
+}
+
+// LAB LIFE LIST
+.lab-life-list {
+  .row {
+    margin-bottom: 20px;
   }
 }

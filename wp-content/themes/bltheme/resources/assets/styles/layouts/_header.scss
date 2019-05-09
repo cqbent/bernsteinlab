@@ -93,7 +93,6 @@ header.banner {
         }
 
         .sub-menu {
-          display: none;
           list-style: none;
           margin: 0 0 10px 0;
           padding: 0;
@@ -105,24 +104,10 @@ header.banner {
             font-weight: 400;
             letter-spacing: normal;
 
-            &.hover {
-              .sub-menu {
-                display: block;
-              }
-            }
-
-            .sub-menu {
-              display: none;
-            }
           }
         }
       }
 
-      > .menu-item:hover {
-        > .sub-menu {
-          display: block;
-        }
-      }
     }
 
     .navbar-toggler {
@@ -159,10 +144,20 @@ header.banner {
       position: absolute;
       bottom: 0;
       right: 0;
-
-
       .navbar-toggler {
         display: none;
+      }
+      ul.nav {
+        .menu-item {
+          .sub-menu {
+            display: none;
+          }
+          &:hover {
+            > .sub-menu {
+              display: block;
+            }
+          }
+        }
       }
 
       #navbar {

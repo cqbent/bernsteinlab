@@ -12,7 +12,6 @@ footer.content-info {
       font-size: 1.25rem;
     }
     img {
-      height: 60px;
       width: auto;
     }
     ul {
@@ -24,6 +23,16 @@ footer.content-info {
       li {
         //float: left;
         padding: 20px;
+      }
+    }
+    @media (min-width: $screen-xs-min) {
+      img {
+        height: 30px;
+      }
+    }
+    @media (min-width: $screen-sm-min) {
+      img {
+        height: 60px;
       }
     }
   }

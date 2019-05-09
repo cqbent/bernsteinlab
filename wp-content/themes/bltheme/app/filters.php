@@ -81,6 +81,20 @@ add_filter('comments_template', function ($comments_template) {
     return $comments_template;
 }, 100);
 
+
+add_filter( 'sage/display_sidebar', function ( $display ) {
+	static $display;
+
+	isset( $display ) || $display = !in_array( true, [
+		// The sidebar will NOT be displayed if any of the following return true
+		is_front_page(),
+		is_archive('publications'),
+		is_page_template( 'views/front-page.blade.php' )
+	] );
+
+	return $display;
+} );
+
 function bl_search_form($form) {
 	$form =  '
 	<form role="search" method="get" class="search-form"  action="' . home_url( '/' ) . '" >
