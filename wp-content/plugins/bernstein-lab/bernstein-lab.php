@@ -393,8 +393,7 @@ function bernstein_lab_life_list() {
 	$query  = new \WP_Query( $args );
 	if ( $query->have_posts() ) {
 		$output = '
-      <div class="lab-life-list container">
-        <div class="row">';
+      <div class="lab-life-list container">';
 		while ( $query->have_posts() ) {
 			$query->the_post();
 			$img = get_the_post_thumbnail();
@@ -402,19 +401,21 @@ function bernstein_lab_life_list() {
 				$img = $logo;
 			}
 			$output .= '
-	        <div class="col-sm-4 column">
-	          <a href="' . get_the_permalink() . '">' . $img . '</a>
-	        </div>
-	        <div class="col-sm-8">
-              <h4 class="title">
-	            <a href="' . get_the_permalink() . '">' . get_the_title() . '</a>
-	          </h4>
-	          <div class="date">' . get_the_date( 'F Y' ) . '</div>
-	          <div class="excerpt">' . wp_trim_excerpt() . '</div>
+			<div class="row">
+		        <div class="col-sm-4 column">
+		          <a href="' . get_the_permalink() . '">' . $img . '</a>
+		        </div>
+		        <div class="col-sm-8">
+	              <h4 class="title">
+		            <a href="' . get_the_permalink() . '">' . get_the_title() . '</a>
+		          </h4>
+		          <div class="date">' . get_the_date( 'F Y' ) . '</div>
+		          <div class="excerpt">' . wp_trim_excerpt() . '</div>
+		        </div>
 	        </div>
       ';
 		}
-		$output .= '</div></div>';
+		$output .= '</div>';
 		wp_reset_postdata();
 	}
 
