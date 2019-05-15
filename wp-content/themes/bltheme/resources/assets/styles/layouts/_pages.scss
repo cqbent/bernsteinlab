@@ -81,28 +81,35 @@
   }
   .home-banner {
     position: relative;
-    height: 300px;
+    height: 200px;
+    color: $white;
     img.wp-post-image {
       object-fit: cover;
       height: 100%;
     }
-    .content {
-      position: absolute;
-      top: calc(50% - 100px);
+    .tagline {
       text-align: center;
-      width: 100%;
-      max-width: $screen-md-min;
+      font-size: 2rem;
+      line-height: normal;
+      font-weight: 700;
+      position: absolute;
+      top: 50px;
       padding: 0 15px;
-      .tagline {
-        font-size: 2rem;
-        line-height: normal;
-        font-weight: 700;
-        color: $white;
-        margin-bottom: 10px;
+    }
+  }
+
+  .home-content {
+    padding: 15px;
+    .info {
+      line-height: normal;
+      .column {
+        max-width: 400px;
+        padding-bottom: 20px;
+        position: relative;
       }
-      .btn-primary {
-        width: 250px;
-      }
+    }
+    .btn-primary {
+      width: 150px;
     }
   }
 
@@ -176,9 +183,26 @@
 
   @media (min-width: $screen-sm-min) {
     .home-banner {
-      height: 400px;
-      .content {
-
+      height: 450px;
+      .tagline {
+        padding: 0 calc((100% - #{$screen-sm-min}) / 2);
+      }
+    }
+    .home-content {
+      position: absolute;
+      top: 100px;
+      width: 100%;
+      color: $white;
+      padding: 0 calc((100% - #{$screen-sm-min}) / 2);
+      .info {
+        font-size: 1.25rem;
+        .column {
+          padding-bottom: 40px;
+          .btn {
+            position: absolute;
+            bottom: 0;
+          }
+        }
       }
     }
     .latest-news {
@@ -198,12 +222,12 @@
   @media (min-width: $screen-md-min) {
     .home-banner {
       height: 600px;
-      .content {
-        left: calc((100% - #{$screen-md-min}) / 2);
-        .tagline {
-          font-size: 3rem;
-        }
+      .tagline {
+        font-size: 2.5rem;
       }
+    }
+    .home-content {
+      top: 175px;
     }
   }
 }

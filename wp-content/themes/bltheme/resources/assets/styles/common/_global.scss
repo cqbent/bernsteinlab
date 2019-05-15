@@ -23,11 +23,18 @@ label {
 
 a {
   color: $blue;
+  &:hover, &:focus {
+    color: darken($blue, 10%);
+  }
 }
 
 .btn-primary {
   background-color: $green;
   border-color: $green;
+  &:hover, &:focus {
+    background-color: darken($green, 10%);
+    border-color: darken($green, 10%);
+  }
 }
 
 a,
