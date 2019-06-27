@@ -12,15 +12,12 @@
           <p>
             <strong>Simches</strong><br />
             185 Cambridge Street<br />
-            Boston, MA 02114<br />
-            8th floor<br />
-            Room 8400<br />
-            Harvard or MGH badge required
+            Boston, MA
           </p>
           <p>
             <strong>Broad Institute</strong><br />
             NE30<br />
-            Cambridge, MA 02142
+            Cambridge, MA
           </p>
         </div>
         <div class="footer-nav col-md-3">
@@ -36,7 +33,7 @@
 			?>
         </div>
         <div class="copyright col-md-3">
-          Copyright © 2018<br />
+          Copyright © 2019<br />
           <strong>Bernstein Laboratory</strong><br />
           All Rights Reserved.
         </div>

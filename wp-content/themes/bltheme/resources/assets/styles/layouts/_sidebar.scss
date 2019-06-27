@@ -19,7 +19,7 @@
           padding: 5px 10px;
         }
       }
-      li.current-menu-item, li.current-menu-item li, li.current-menu-ancestor, li.current-menu-ancestor li {
+      li.current-menu-item.menu-item-has-children, li.current-menu-item li, li.current-menu-ancestor, li.current-menu-ancestor li {
         display: block;
       }
       li.current-menu-item > a {

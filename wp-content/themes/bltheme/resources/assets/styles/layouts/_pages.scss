@@ -1,4 +1,11 @@
 .page {
+  .content {
+    .wp-post-image {
+      max-width: 300px;
+      float: right;
+      margin-left: 20px;
+    }
+  }
   // research landing page
   &.research {
     .main {
@@ -103,20 +110,33 @@
     .info {
       line-height: normal;
       .column {
-        max-width: 400px;
-        padding-bottom: 20px;
+        //max-width: 400px;
         position: relative;
+      }
+      .what-we-do, .locations .column {
+        padding-bottom: 40px;
+      }
+      img {
+        display: block;
+        margin-bottom: 5px;
+        height: 60px;
       }
     }
     .btn-primary {
       width: 150px;
+      display: block;
+      margin-top: 10px;
     }
   }
 
   .latest-news {
-    padding-bottom: 30px;
+    padding: 30px;
     background-color: $light-gray;
+    .container {
+      max-width: $screen-md-min !important;
+    }
     .row {
+      margin-bottom: 20px;
       .column {
         padding-top: 15px;
         background-color: $light-gray;
@@ -138,7 +158,7 @@
   .research {
     padding: 0 15px;
     margin: 30px auto;
-
+    max-width: $screen-md-min !important;
     .research-list {
       .column {
         margin-bottom: 20px;
@@ -193,11 +213,10 @@
       top: 100px;
       width: 100%;
       color: $white;
-      padding: 0 calc((100% - #{$screen-sm-min}) / 2);
+      padding: 0 calc((100% - #{$screen-md-min}) / 2);
       .info {
         font-size: 1.25rem;
         .column {
-          padding-bottom: 40px;
           .btn {
             position: absolute;
             bottom: 0;

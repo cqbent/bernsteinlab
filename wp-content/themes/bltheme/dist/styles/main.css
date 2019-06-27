@@ -15258,7 +15258,7 @@ header.banner nav.nav-primary .navbar-toggler .icon-bar {
 
 /* line 22, resources/assets/styles/layouts/_sidebar.scss */
 
-.sidebar .submenu-navigation ul li.current-menu-item,
+.sidebar .submenu-navigation ul li.current-menu-item.menu-item-has-children,
 .sidebar .submenu-navigation ul li.current-menu-item li,
 .sidebar .submenu-navigation ul li.current-menu-ancestor,
 .sidebar .submenu-navigation ul li.current-menu-ancestor li {
@@ -15407,13 +15407,21 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   margin: 0;
 }
 
-/* line 4, resources/assets/styles/layouts/_pages.scss */
+/* line 3, resources/assets/styles/layouts/_pages.scss */
+
+.page .content .wp-post-image {
+  max-width: 300px;
+  float: right;
+  margin-left: 20px;
+}
+
+/* line 11, resources/assets/styles/layouts/_pages.scss */
 
 .page.research .main {
   max-width: calc(1200px - 30px);
 }
 
-/* line 7, resources/assets/styles/layouts/_pages.scss */
+/* line 14, resources/assets/styles/layouts/_pages.scss */
 
 .page.research .page-content {
   width: 100vw;
@@ -15421,7 +15429,7 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   padding: 0 15px;
 }
 
-/* line 11, resources/assets/styles/layouts/_pages.scss */
+/* line 18, resources/assets/styles/layouts/_pages.scss */
 
 .page.research .page-content .feature-box {
   padding: 40px 15px;
@@ -15430,14 +15438,14 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   margin-bottom: 20px;
 }
 
-/* line 16, resources/assets/styles/layouts/_pages.scss */
+/* line 23, resources/assets/styles/layouts/_pages.scss */
 
 .page.research .page-content .feature-box .feature-text {
   max-width: calc(1200px - 30px);
   margin: 0 auto;
 }
 
-/* line 22, resources/assets/styles/layouts/_pages.scss */
+/* line 29, resources/assets/styles/layouts/_pages.scss */
 
 .page.research .page-content .research-list .column {
   background-color: #e8edef;
@@ -15445,21 +15453,21 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   margin-bottom: 20px;
 }
 
-/* line 26, resources/assets/styles/layouts/_pages.scss */
+/* line 33, resources/assets/styles/layouts/_pages.scss */
 
 .page.research .page-content .research-list .column .row {
   margin: 0 auto;
   max-width: 992px;
 }
 
-/* line 30, resources/assets/styles/layouts/_pages.scss */
+/* line 37, resources/assets/styles/layouts/_pages.scss */
 
 .page.research .page-content .research-list .column .row .content .title {
   font-weight: 700;
 }
 
 @media (min-width: 768px) {
-  /* line 40, resources/assets/styles/layouts/_pages.scss */
+  /* line 47, resources/assets/styles/layouts/_pages.scss */
 
   .page.research .page-content .research-list .row .image {
     -webkit-box-flex: 0;
@@ -15468,7 +15476,7 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
     padding-right: 20px;
   }
 
-  /* line 44, resources/assets/styles/layouts/_pages.scss */
+  /* line 51, resources/assets/styles/layouts/_pages.scss */
 
   .page.research .page-content .research-list .row .content {
     -webkit-box-flex: 0;
@@ -15478,52 +15486,52 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
 }
 
 @media (min-width: 1200px) {
-  /* line 7, resources/assets/styles/layouts/_pages.scss */
+  /* line 14, resources/assets/styles/layouts/_pages.scss */
 
   .page.research .page-content {
     margin-left: calc((calc(1200px - 30px) - 100vw)/2);
   }
 
-  /* line 52, resources/assets/styles/layouts/_pages.scss */
+  /* line 59, resources/assets/styles/layouts/_pages.scss */
 
   .page.research .page-content .feature-box {
     padding: 40px 0;
   }
 
-  /* line 54, resources/assets/styles/layouts/_pages.scss */
+  /* line 61, resources/assets/styles/layouts/_pages.scss */
 
   .page.research .page-content .feature-box .feature-text {
     padding-right: 220px;
   }
 
-  /* line 59, resources/assets/styles/layouts/_pages.scss */
+  /* line 66, resources/assets/styles/layouts/_pages.scss */
 
   .page.research .page-content .research-list .column {
     padding: 20px 0;
   }
 }
 
-/* line 71, resources/assets/styles/layouts/_pages.scss */
+/* line 78, resources/assets/styles/layouts/_pages.scss */
 
 .home .wrap.container {
   max-width: 100% !important;
   padding: 0;
 }
 
-/* line 74, resources/assets/styles/layouts/_pages.scss */
+/* line 81, resources/assets/styles/layouts/_pages.scss */
 
 .home .wrap.container .main {
   max-width: 100%;
   padding-top: 0;
 }
 
-/* line 79, resources/assets/styles/layouts/_pages.scss */
+/* line 86, resources/assets/styles/layouts/_pages.scss */
 
 .home .breadcrumbs {
   display: none;
 }
 
-/* line 82, resources/assets/styles/layouts/_pages.scss */
+/* line 89, resources/assets/styles/layouts/_pages.scss */
 
 .home .home-banner {
   position: relative;
@@ -15531,7 +15539,7 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   color: #fff;
 }
 
-/* line 86, resources/assets/styles/layouts/_pages.scss */
+/* line 93, resources/assets/styles/layouts/_pages.scss */
 
 .home .home-banner img.wp-post-image {
   -o-object-fit: cover;
@@ -15539,7 +15547,7 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   height: 100%;
 }
 
-/* line 90, resources/assets/styles/layouts/_pages.scss */
+/* line 97, resources/assets/styles/layouts/_pages.scss */
 
 .home .home-banner .tagline {
   text-align: center;
@@ -15551,54 +15559,81 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   padding: 0 15px;
 }
 
-/* line 101, resources/assets/styles/layouts/_pages.scss */
+/* line 108, resources/assets/styles/layouts/_pages.scss */
 
 .home .home-content {
   padding: 15px;
 }
 
-/* line 103, resources/assets/styles/layouts/_pages.scss */
+/* line 110, resources/assets/styles/layouts/_pages.scss */
 
 .home .home-content .info {
   line-height: normal;
 }
 
-/* line 105, resources/assets/styles/layouts/_pages.scss */
+/* line 112, resources/assets/styles/layouts/_pages.scss */
 
 .home .home-content .info .column {
-  max-width: 400px;
-  padding-bottom: 20px;
   position: relative;
-}
-
-/* line 111, resources/assets/styles/layouts/_pages.scss */
-
-.home .home-content .btn-primary {
-  width: 150px;
 }
 
 /* line 116, resources/assets/styles/layouts/_pages.scss */
 
+.home .home-content .info .what-we-do,
+.home .home-content .info .locations .column {
+  padding-bottom: 40px;
+}
+
+/* line 119, resources/assets/styles/layouts/_pages.scss */
+
+.home .home-content .info img {
+  display: block;
+  margin-bottom: 5px;
+  height: 60px;
+}
+
+/* line 125, resources/assets/styles/layouts/_pages.scss */
+
+.home .home-content .btn-primary {
+  width: 150px;
+  display: block;
+  margin-top: 10px;
+}
+
+/* line 132, resources/assets/styles/layouts/_pages.scss */
+
 .home .latest-news {
-  padding-bottom: 30px;
+  padding: 30px;
   background-color: #e8edef;
 }
 
-/* line 120, resources/assets/styles/layouts/_pages.scss */
+/* line 135, resources/assets/styles/layouts/_pages.scss */
+
+.home .latest-news .container {
+  max-width: 992px !important;
+}
+
+/* line 138, resources/assets/styles/layouts/_pages.scss */
+
+.home .latest-news .row {
+  margin-bottom: 20px;
+}
+
+/* line 140, resources/assets/styles/layouts/_pages.scss */
 
 .home .latest-news .row .column {
   padding-top: 15px;
   background-color: #e8edef;
 }
 
-/* line 123, resources/assets/styles/layouts/_pages.scss */
+/* line 143, resources/assets/styles/layouts/_pages.scss */
 
 .home .latest-news .row .column img {
   padding-bottom: 5px;
 }
 
 @media (min-width: 992px) {
-  /* line 120, resources/assets/styles/layouts/_pages.scss */
+  /* line 140, resources/assets/styles/layouts/_pages.scss */
 
   .home .latest-news .row .column {
     margin-right: 15px;
@@ -15608,39 +15643,40 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   }
 }
 
-/* line 132, resources/assets/styles/layouts/_pages.scss */
+/* line 152, resources/assets/styles/layouts/_pages.scss */
 
 .home .latest-news .title {
   font-weight: 700;
 }
 
-/* line 138, resources/assets/styles/layouts/_pages.scss */
+/* line 158, resources/assets/styles/layouts/_pages.scss */
 
 .home .research {
   padding: 0 15px;
   margin: 30px auto;
+  max-width: 992px !important;
 }
 
-/* line 143, resources/assets/styles/layouts/_pages.scss */
+/* line 163, resources/assets/styles/layouts/_pages.scss */
 
 .home .research .research-list .column {
   margin-bottom: 20px;
 }
 
-/* line 146, resources/assets/styles/layouts/_pages.scss */
+/* line 166, resources/assets/styles/layouts/_pages.scss */
 
 .home .research .research-list .title {
   font-weight: 700;
 }
 
-/* line 149, resources/assets/styles/layouts/_pages.scss */
+/* line 169, resources/assets/styles/layouts/_pages.scss */
 
 .home .research .research-list .image {
   height: 200px;
   margin-bottom: 10px;
 }
 
-/* line 152, resources/assets/styles/layouts/_pages.scss */
+/* line 172, resources/assets/styles/layouts/_pages.scss */
 
 .home .research .research-list .image img {
   -o-object-fit: cover;
@@ -15649,7 +15685,7 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   width: 100%;
 }
 
-/* line 161, resources/assets/styles/layouts/_pages.scss */
+/* line 181, resources/assets/styles/layouts/_pages.scss */
 
 .home .wrap .banner {
   width: 100vw;
@@ -15661,61 +15697,55 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   font-size: 1.2rem;
 }
 
-/* line 170, resources/assets/styles/layouts/_pages.scss */
+/* line 190, resources/assets/styles/layouts/_pages.scss */
 
 .home .wrap .banner h1 {
   font-size: 1.2rem;
   text-transform: uppercase;
 }
 
-/* line 175, resources/assets/styles/layouts/_pages.scss */
+/* line 195, resources/assets/styles/layouts/_pages.scss */
 
 .home .wrap .banner .intro {
   padding: 0;
 }
 
-/* line 179, resources/assets/styles/layouts/_pages.scss */
+/* line 199, resources/assets/styles/layouts/_pages.scss */
 
 .home .wrap .banner p {
   margin: 0;
 }
 
 @media (min-width: 768px) {
-  /* line 185, resources/assets/styles/layouts/_pages.scss */
+  /* line 205, resources/assets/styles/layouts/_pages.scss */
 
   .home .home-banner {
     height: 450px;
   }
 
-  /* line 187, resources/assets/styles/layouts/_pages.scss */
+  /* line 207, resources/assets/styles/layouts/_pages.scss */
 
   .home .home-banner .tagline {
     padding: 0 calc((100% - 768px) / 2);
   }
 
-  /* line 191, resources/assets/styles/layouts/_pages.scss */
+  /* line 211, resources/assets/styles/layouts/_pages.scss */
 
   .home .home-content {
     position: absolute;
     top: 100px;
     width: 100%;
     color: #fff;
-    padding: 0 calc((100% - 768px) / 2);
+    padding: 0 calc((100% - 992px) / 2);
   }
 
-  /* line 197, resources/assets/styles/layouts/_pages.scss */
+  /* line 217, resources/assets/styles/layouts/_pages.scss */
 
   .home .home-content .info {
     font-size: 1.25rem;
   }
 
-  /* line 199, resources/assets/styles/layouts/_pages.scss */
-
-  .home .home-content .info .column {
-    padding-bottom: 40px;
-  }
-
-  /* line 201, resources/assets/styles/layouts/_pages.scss */
+  /* line 220, resources/assets/styles/layouts/_pages.scss */
 
   .home .home-content .info .column .btn,
   .home .home-content .info .column .comment-form input[type="submit"],
@@ -15726,19 +15756,19 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
     bottom: 0;
   }
 
-  /* line 208, resources/assets/styles/layouts/_pages.scss */
+  /* line 227, resources/assets/styles/layouts/_pages.scss */
 
   .home .latest-news {
     position: relative;
   }
 
-  /* line 211, resources/assets/styles/layouts/_pages.scss */
+  /* line 230, resources/assets/styles/layouts/_pages.scss */
 
   .home .latest-news .row .column {
     margin-top: -100px;
   }
 
-  /* line 216, resources/assets/styles/layouts/_pages.scss */
+  /* line 235, resources/assets/styles/layouts/_pages.scss */
 
   .home .wrap .banner {
     padding: 40px;
@@ -15748,19 +15778,19 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
 }
 
 @media (min-width: 992px) {
-  /* line 223, resources/assets/styles/layouts/_pages.scss */
+  /* line 242, resources/assets/styles/layouts/_pages.scss */
 
   .home .home-banner {
     height: 600px;
   }
 
-  /* line 225, resources/assets/styles/layouts/_pages.scss */
+  /* line 244, resources/assets/styles/layouts/_pages.scss */
 
   .home .home-banner .tagline {
     font-size: 2.5rem;
   }
 
-  /* line 229, resources/assets/styles/layouts/_pages.scss */
+  /* line 248, resources/assets/styles/layouts/_pages.scss */
 
   .home .home-content {
     top: 175px;
@@ -15768,7 +15798,7 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
 }
 
 @media (min-width: 992px) {
-  /* line 240, resources/assets/styles/layouts/_pages.scss */
+  /* line 259, resources/assets/styles/layouts/_pages.scss */
 
   .page-template-landing-page .wrap .banner .intro,
   .page-template-landing-page .wrap .content {
@@ -15776,26 +15806,26 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
     margin: 0 auto;
   }
 
-  /* line 246, resources/assets/styles/layouts/_pages.scss */
+  /* line 265, resources/assets/styles/layouts/_pages.scss */
 
   .page-template-landing-page .wrap .banner {
     font-size: 1.5rem;
   }
 
-  /* line 249, resources/assets/styles/layouts/_pages.scss */
+  /* line 268, resources/assets/styles/layouts/_pages.scss */
 
   .page-template-landing-page .wrap .banner h1 {
     display: none;
   }
 
-  /* line 253, resources/assets/styles/layouts/_pages.scss */
+  /* line 272, resources/assets/styles/layouts/_pages.scss */
 
   .page-template-landing-page .wrap .banner .intro {
     padding: 0 15px;
   }
 }
 
-/* line 263, resources/assets/styles/layouts/_pages.scss */
+/* line 282, resources/assets/styles/layouts/_pages.scss */
 
 .about-list img {
   height: 200px;
@@ -15804,7 +15834,7 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   width: 100%;
 }
 
-/* line 269, resources/assets/styles/layouts/_pages.scss */
+/* line 288, resources/assets/styles/layouts/_pages.scss */
 
 .about-list .btn,
 .about-list .comment-form input[type="submit"],
@@ -15819,7 +15849,7 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   margin-top: 5px;
 }
 
-/* line 277, resources/assets/styles/layouts/_pages.scss */
+/* line 296, resources/assets/styles/layouts/_pages.scss */
 
 .about-list .btn.team,
 .about-list .comment-form input.team[type="submit"],
@@ -15829,7 +15859,7 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   background-color: #29B6F6;
 }
 
-/* line 281, resources/assets/styles/layouts/_pages.scss */
+/* line 300, resources/assets/styles/layouts/_pages.scss */
 
 .about-list .btn.partners,
 .about-list .comment-form input.partners[type="submit"],
@@ -15839,7 +15869,7 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   background-color: #003571;
 }
 
-/* line 291, resources/assets/styles/layouts/_pages.scss */
+/* line 310, resources/assets/styles/layouts/_pages.scss */
 
 .wrap.container .home-slider .owl-item .item img {
   height: 250px;
@@ -15847,7 +15877,7 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
      object-fit: cover;
 }
 
-/* line 296, resources/assets/styles/layouts/_pages.scss */
+/* line 315, resources/assets/styles/layouts/_pages.scss */
 
 .wrap.container .home-slider .owl-item .item .content {
   width: 100%;
@@ -15864,7 +15894,7 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   height: 80px;
 }
 
-/* line 309, resources/assets/styles/layouts/_pages.scss */
+/* line 328, resources/assets/styles/layouts/_pages.scss */
 
 .wrap.container .home-slider .owl-nav {
   width: 100%;
@@ -15873,7 +15903,7 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   top: 50%;
 }
 
-/* line 316, resources/assets/styles/layouts/_pages.scss */
+/* line 335, resources/assets/styles/layouts/_pages.scss */
 
 .wrap.container .home-slider .owl-nav button.owl-prev,
 .wrap.container .home-slider .owl-nav button.owl-next {
@@ -15882,7 +15912,7 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   background-repeat: no-repeat;
 }
 
-/* line 322, resources/assets/styles/layouts/_pages.scss */
+/* line 341, resources/assets/styles/layouts/_pages.scss */
 
 .wrap.container .home-slider .owl-nav button.owl-prev:hover,
 .wrap.container .home-slider .owl-nav button.owl-next:hover {
@@ -15890,7 +15920,7 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
 }
 
 @media (max-width: 768px) {
-  /* line 340, resources/assets/styles/layouts/_pages.scss */
+  /* line 359, resources/assets/styles/layouts/_pages.scss */
 
   .wrap.container .home-slider .owl-nav button.owl-prev,
   .wrap.container .home-slider .owl-nav button.owl-next {
@@ -15898,19 +15928,19 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
     width: 15px;
   }
 
-  /* line 346, resources/assets/styles/layouts/_pages.scss */
+  /* line 365, resources/assets/styles/layouts/_pages.scss */
 
   .wrap.container .home-slider .owl-nav button.owl-prev {
     left: -10px;
   }
 
-  /* line 350, resources/assets/styles/layouts/_pages.scss */
+  /* line 369, resources/assets/styles/layouts/_pages.scss */
 
   .wrap.container .home-slider .owl-nav button.owl-next {
     right: -10px;
   }
 
-  /* line 356, resources/assets/styles/layouts/_pages.scss */
+  /* line 375, resources/assets/styles/layouts/_pages.scss */
 
   .wrap.container .home-slider .owl-item {
     padding: 0 20px;
@@ -15918,13 +15948,13 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
 }
 
 @media (min-width: 768px) {
-  /* line 364, resources/assets/styles/layouts/_pages.scss */
+  /* line 383, resources/assets/styles/layouts/_pages.scss */
 
   .wrap.container .home-slider .owl-item .item img {
     height: 350px;
   }
 
-  /* line 368, resources/assets/styles/layouts/_pages.scss */
+  /* line 387, resources/assets/styles/layouts/_pages.scss */
 
   .wrap.container .home-slider .owl-item .item .content {
     font-size: 24px;
@@ -15933,44 +15963,44 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
 }
 
 @media (min-width: 992px) {
-  /* line 377, resources/assets/styles/layouts/_pages.scss */
+  /* line 396, resources/assets/styles/layouts/_pages.scss */
 
   .wrap.container .home-slider .owl-item {
     padding: 0 51px;
   }
 
-  /* line 380, resources/assets/styles/layouts/_pages.scss */
+  /* line 399, resources/assets/styles/layouts/_pages.scss */
 
   .wrap.container .home-slider .owl-item .item {
     padding: 0 20px;
   }
 
-  /* line 383, resources/assets/styles/layouts/_pages.scss */
+  /* line 402, resources/assets/styles/layouts/_pages.scss */
 
   .wrap.container .home-slider .owl-item .item img {
     height: 450px;
   }
 
-  /* line 387, resources/assets/styles/layouts/_pages.scss */
+  /* line 406, resources/assets/styles/layouts/_pages.scss */
 
   .wrap.container .home-slider .owl-item .item .content {
     width: 80%;
   }
 }
 
-/* line 398, resources/assets/styles/layouts/_pages.scss */
+/* line 417, resources/assets/styles/layouts/_pages.scss */
 
 .people-list .social-contact {
   font-size: 1.2rem;
 }
 
-/* line 401, resources/assets/styles/layouts/_pages.scss */
+/* line 420, resources/assets/styles/layouts/_pages.scss */
 
 .people-list .social-contact a {
   margin-right: 10px;
 }
 
-/* line 409, resources/assets/styles/layouts/_pages.scss */
+/* line 428, resources/assets/styles/layouts/_pages.scss */
 
 .lab-life-list .row {
   margin-bottom: 20px;

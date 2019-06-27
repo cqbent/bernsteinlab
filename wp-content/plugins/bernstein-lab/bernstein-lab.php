@@ -16,6 +16,9 @@ add_action( 'init', 'people_post_type' );
 add_action( 'init', 'publications_post_type' );
 add_action( 'init', 'lab_life_post_type' );
 add_action('init', 'people_roles_taxonomy');
+
+
+
 /**
  * Research Project Post Type
  */
@@ -189,8 +192,7 @@ function bernstein_latest_news() {
 	$query  = new \WP_Query( $args );
 	if ( $query->have_posts() ) {
 		$output = '
-      <div class="container">
-        <div class="row">';
+      <div class="container">';
 		while ( $query->have_posts() ) {
 			$query->the_post();
 			$img = get_the_post_thumbnail();
@@ -198,17 +200,21 @@ function bernstein_latest_news() {
 				$img = $logo;
 			}
 			$output .= '
-        <div class="column col-md-4">
-          <a href="' . get_the_permalink() . '">' . $img . '</a>
-          <div class="title">
+        <div class="row">
+          <div class="image col-sm-4 col-md-3">
+          	<a href="' . get_the_permalink() . '">' . $img . '</a>
+		  </div>
+		  <div class="description col-sm-8 col-md-9">
+		  	<div class="title">
             <a href="' . get_the_permalink() . '">' . get_the_title() . '</a>
-          </div>
-          <div class="date">' . get_the_date( 'F Y' ) . '</div>
-          <div class="excerpt">' . wp_trim_excerpt() . '</div>
+            </div>
+            <div class="date">' . get_the_date( 'F Y' ) . '</div>
+            <div class="excerpt">' . wp_trim_excerpt() . '</div>
+		  </div>        
         </div>
       ';
 		}
-		$output .= '</div></div>';
+		$output .= '</div>';
 		wp_reset_postdata();
 	}
 
