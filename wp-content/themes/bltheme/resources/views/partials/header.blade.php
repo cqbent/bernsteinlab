@@ -1,7 +1,7 @@
 <header class="banner">
   <div class="container">
     <a class="brand" href="{{ home_url('/') }}">
-      <img src="{{ get_stylesheet_directory_uri() }}/assets/images/bl_logo.svg" alt="Bernstein Labs" />
+      <img src="{{ get_stylesheet_directory_uri() }}/assets/images/bl_logo_alt.svg" alt="Bernstein Labs" />
     </a>
     <nav class="nav-primary">
       @if (has_nav_menu('primary_navigation'))
