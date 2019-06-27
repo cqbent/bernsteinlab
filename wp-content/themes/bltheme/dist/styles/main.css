@@ -15407,21 +15407,21 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   margin: 0;
 }
 
-/* line 3, resources/assets/styles/layouts/_pages.scss */
+/* line 4, resources/assets/styles/layouts/_pages.scss */
 
-.page .content .wp-post-image {
+.page:not(.home) .content .wp-post-image {
   max-width: 300px;
   float: right;
   margin-left: 20px;
 }
 
-/* line 11, resources/assets/styles/layouts/_pages.scss */
+/* line 13, resources/assets/styles/layouts/_pages.scss */
 
 .page.research .main {
   max-width: calc(1200px - 30px);
 }
 
-/* line 14, resources/assets/styles/layouts/_pages.scss */
+/* line 16, resources/assets/styles/layouts/_pages.scss */
 
 .page.research .page-content {
   width: 100vw;
@@ -15429,7 +15429,7 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   padding: 0 15px;
 }
 
-/* line 18, resources/assets/styles/layouts/_pages.scss */
+/* line 20, resources/assets/styles/layouts/_pages.scss */
 
 .page.research .page-content .feature-box {
   padding: 40px 15px;
@@ -15438,14 +15438,14 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   margin-bottom: 20px;
 }
 
-/* line 23, resources/assets/styles/layouts/_pages.scss */
+/* line 25, resources/assets/styles/layouts/_pages.scss */
 
 .page.research .page-content .feature-box .feature-text {
   max-width: calc(1200px - 30px);
   margin: 0 auto;
 }
 
-/* line 29, resources/assets/styles/layouts/_pages.scss */
+/* line 31, resources/assets/styles/layouts/_pages.scss */
 
 .page.research .page-content .research-list .column {
   background-color: #e8edef;
@@ -15453,21 +15453,21 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   margin-bottom: 20px;
 }
 
-/* line 33, resources/assets/styles/layouts/_pages.scss */
+/* line 35, resources/assets/styles/layouts/_pages.scss */
 
 .page.research .page-content .research-list .column .row {
   margin: 0 auto;
   max-width: 992px;
 }
 
-/* line 37, resources/assets/styles/layouts/_pages.scss */
+/* line 39, resources/assets/styles/layouts/_pages.scss */
 
 .page.research .page-content .research-list .column .row .content .title {
   font-weight: 700;
 }
 
 @media (min-width: 768px) {
-  /* line 47, resources/assets/styles/layouts/_pages.scss */
+  /* line 49, resources/assets/styles/layouts/_pages.scss */
 
   .page.research .page-content .research-list .row .image {
     -webkit-box-flex: 0;
@@ -15476,7 +15476,7 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
     padding-right: 20px;
   }
 
-  /* line 51, resources/assets/styles/layouts/_pages.scss */
+  /* line 53, resources/assets/styles/layouts/_pages.scss */
 
   .page.research .page-content .research-list .row .content {
     -webkit-box-flex: 0;
@@ -15486,52 +15486,52 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
 }
 
 @media (min-width: 1200px) {
-  /* line 14, resources/assets/styles/layouts/_pages.scss */
+  /* line 16, resources/assets/styles/layouts/_pages.scss */
 
   .page.research .page-content {
     margin-left: calc((calc(1200px - 30px) - 100vw)/2);
   }
 
-  /* line 59, resources/assets/styles/layouts/_pages.scss */
+  /* line 61, resources/assets/styles/layouts/_pages.scss */
 
   .page.research .page-content .feature-box {
     padding: 40px 0;
   }
 
-  /* line 61, resources/assets/styles/layouts/_pages.scss */
+  /* line 63, resources/assets/styles/layouts/_pages.scss */
 
   .page.research .page-content .feature-box .feature-text {
     padding-right: 220px;
   }
 
-  /* line 66, resources/assets/styles/layouts/_pages.scss */
+  /* line 68, resources/assets/styles/layouts/_pages.scss */
 
   .page.research .page-content .research-list .column {
     padding: 20px 0;
   }
 }
 
-/* line 78, resources/assets/styles/layouts/_pages.scss */
+/* line 80, resources/assets/styles/layouts/_pages.scss */
 
 .home .wrap.container {
   max-width: 100% !important;
   padding: 0;
 }
 
-/* line 81, resources/assets/styles/layouts/_pages.scss */
+/* line 83, resources/assets/styles/layouts/_pages.scss */
 
 .home .wrap.container .main {
   max-width: 100%;
   padding-top: 0;
 }
 
-/* line 86, resources/assets/styles/layouts/_pages.scss */
+/* line 88, resources/assets/styles/layouts/_pages.scss */
 
 .home .breadcrumbs {
   display: none;
 }
 
-/* line 89, resources/assets/styles/layouts/_pages.scss */
+/* line 91, resources/assets/styles/layouts/_pages.scss */
 
 .home .home-banner {
   position: relative;
@@ -15539,7 +15539,7 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   color: #fff;
 }
 
-/* line 93, resources/assets/styles/layouts/_pages.scss */
+/* line 95, resources/assets/styles/layouts/_pages.scss */
 
 .home .home-banner img.wp-post-image {
   -o-object-fit: cover;
@@ -15547,7 +15547,7 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   height: 100%;
 }
 
-/* line 97, resources/assets/styles/layouts/_pages.scss */
+/* line 99, resources/assets/styles/layouts/_pages.scss */
 
 .home .home-banner .tagline {
   text-align: center;
@@ -15559,32 +15559,32 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   padding: 0 15px;
 }
 
-/* line 108, resources/assets/styles/layouts/_pages.scss */
+/* line 110, resources/assets/styles/layouts/_pages.scss */
 
 .home .home-content {
   padding: 15px;
 }
 
-/* line 110, resources/assets/styles/layouts/_pages.scss */
+/* line 112, resources/assets/styles/layouts/_pages.scss */
 
 .home .home-content .info {
   line-height: normal;
 }
 
-/* line 112, resources/assets/styles/layouts/_pages.scss */
+/* line 114, resources/assets/styles/layouts/_pages.scss */
 
 .home .home-content .info .column {
   position: relative;
 }
 
-/* line 116, resources/assets/styles/layouts/_pages.scss */
+/* line 118, resources/assets/styles/layouts/_pages.scss */
 
 .home .home-content .info .what-we-do,
 .home .home-content .info .locations .column {
   padding-bottom: 40px;
 }
 
-/* line 119, resources/assets/styles/layouts/_pages.scss */
+/* line 121, resources/assets/styles/layouts/_pages.scss */
 
 .home .home-content .info img {
   display: block;
@@ -15592,7 +15592,7 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   height: 60px;
 }
 
-/* line 125, resources/assets/styles/layouts/_pages.scss */
+/* line 127, resources/assets/styles/layouts/_pages.scss */
 
 .home .home-content .btn-primary {
   width: 150px;
@@ -15600,40 +15600,40 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   margin-top: 10px;
 }
 
-/* line 132, resources/assets/styles/layouts/_pages.scss */
+/* line 134, resources/assets/styles/layouts/_pages.scss */
 
 .home .latest-news {
   padding: 30px;
   background-color: #e8edef;
 }
 
-/* line 135, resources/assets/styles/layouts/_pages.scss */
+/* line 137, resources/assets/styles/layouts/_pages.scss */
 
 .home .latest-news .container {
   max-width: 992px !important;
 }
 
-/* line 138, resources/assets/styles/layouts/_pages.scss */
+/* line 140, resources/assets/styles/layouts/_pages.scss */
 
 .home .latest-news .row {
   margin-bottom: 20px;
 }
 
-/* line 140, resources/assets/styles/layouts/_pages.scss */
+/* line 142, resources/assets/styles/layouts/_pages.scss */
 
 .home .latest-news .row .column {
   padding-top: 15px;
   background-color: #e8edef;
 }
 
-/* line 143, resources/assets/styles/layouts/_pages.scss */
+/* line 145, resources/assets/styles/layouts/_pages.scss */
 
 .home .latest-news .row .column img {
   padding-bottom: 5px;
 }
 
 @media (min-width: 992px) {
-  /* line 140, resources/assets/styles/layouts/_pages.scss */
+  /* line 142, resources/assets/styles/layouts/_pages.scss */
 
   .home .latest-news .row .column {
     margin-right: 15px;
@@ -15643,13 +15643,13 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   }
 }
 
-/* line 152, resources/assets/styles/layouts/_pages.scss */
+/* line 154, resources/assets/styles/layouts/_pages.scss */
 
 .home .latest-news .title {
   font-weight: 700;
 }
 
-/* line 158, resources/assets/styles/layouts/_pages.scss */
+/* line 160, resources/assets/styles/layouts/_pages.scss */
 
 .home .research {
   padding: 0 15px;
@@ -15657,26 +15657,26 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   max-width: 992px !important;
 }
 
-/* line 163, resources/assets/styles/layouts/_pages.scss */
+/* line 165, resources/assets/styles/layouts/_pages.scss */
 
 .home .research .research-list .column {
   margin-bottom: 20px;
 }
 
-/* line 166, resources/assets/styles/layouts/_pages.scss */
+/* line 168, resources/assets/styles/layouts/_pages.scss */
 
 .home .research .research-list .title {
   font-weight: 700;
 }
 
-/* line 169, resources/assets/styles/layouts/_pages.scss */
+/* line 171, resources/assets/styles/layouts/_pages.scss */
 
 .home .research .research-list .image {
   height: 200px;
   margin-bottom: 10px;
 }
 
-/* line 172, resources/assets/styles/layouts/_pages.scss */
+/* line 174, resources/assets/styles/layouts/_pages.scss */
 
 .home .research .research-list .image img {
   -o-object-fit: cover;
@@ -15685,7 +15685,7 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   width: 100%;
 }
 
-/* line 181, resources/assets/styles/layouts/_pages.scss */
+/* line 183, resources/assets/styles/layouts/_pages.scss */
 
 .home .wrap .banner {
   width: 100vw;
@@ -15697,39 +15697,39 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   font-size: 1.2rem;
 }
 
-/* line 190, resources/assets/styles/layouts/_pages.scss */
+/* line 192, resources/assets/styles/layouts/_pages.scss */
 
 .home .wrap .banner h1 {
   font-size: 1.2rem;
   text-transform: uppercase;
 }
 
-/* line 195, resources/assets/styles/layouts/_pages.scss */
+/* line 197, resources/assets/styles/layouts/_pages.scss */
 
 .home .wrap .banner .intro {
   padding: 0;
 }
 
-/* line 199, resources/assets/styles/layouts/_pages.scss */
+/* line 201, resources/assets/styles/layouts/_pages.scss */
 
 .home .wrap .banner p {
   margin: 0;
 }
 
 @media (min-width: 768px) {
-  /* line 205, resources/assets/styles/layouts/_pages.scss */
+  /* line 207, resources/assets/styles/layouts/_pages.scss */
 
   .home .home-banner {
     height: 450px;
   }
 
-  /* line 207, resources/assets/styles/layouts/_pages.scss */
+  /* line 209, resources/assets/styles/layouts/_pages.scss */
 
   .home .home-banner .tagline {
     padding: 0 calc((100% - 768px) / 2);
   }
 
-  /* line 211, resources/assets/styles/layouts/_pages.scss */
+  /* line 213, resources/assets/styles/layouts/_pages.scss */
 
   .home .home-content {
     position: absolute;
@@ -15739,13 +15739,13 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
     padding: 0 calc((100% - 992px) / 2);
   }
 
-  /* line 217, resources/assets/styles/layouts/_pages.scss */
+  /* line 219, resources/assets/styles/layouts/_pages.scss */
 
   .home .home-content .info {
     font-size: 1.25rem;
   }
 
-  /* line 220, resources/assets/styles/layouts/_pages.scss */
+  /* line 222, resources/assets/styles/layouts/_pages.scss */
 
   .home .home-content .info .column .btn,
   .home .home-content .info .column .comment-form input[type="submit"],
@@ -15756,19 +15756,19 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
     bottom: 0;
   }
 
-  /* line 227, resources/assets/styles/layouts/_pages.scss */
+  /* line 229, resources/assets/styles/layouts/_pages.scss */
 
   .home .latest-news {
     position: relative;
   }
 
-  /* line 230, resources/assets/styles/layouts/_pages.scss */
+  /* line 232, resources/assets/styles/layouts/_pages.scss */
 
   .home .latest-news .row .column {
     margin-top: -100px;
   }
 
-  /* line 235, resources/assets/styles/layouts/_pages.scss */
+  /* line 237, resources/assets/styles/layouts/_pages.scss */
 
   .home .wrap .banner {
     padding: 40px;
@@ -15778,19 +15778,19 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
 }
 
 @media (min-width: 992px) {
-  /* line 242, resources/assets/styles/layouts/_pages.scss */
+  /* line 244, resources/assets/styles/layouts/_pages.scss */
 
   .home .home-banner {
     height: 600px;
   }
 
-  /* line 244, resources/assets/styles/layouts/_pages.scss */
+  /* line 246, resources/assets/styles/layouts/_pages.scss */
 
   .home .home-banner .tagline {
     font-size: 2.5rem;
   }
 
-  /* line 248, resources/assets/styles/layouts/_pages.scss */
+  /* line 250, resources/assets/styles/layouts/_pages.scss */
 
   .home .home-content {
     top: 175px;
@@ -15798,7 +15798,7 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
 }
 
 @media (min-width: 992px) {
-  /* line 259, resources/assets/styles/layouts/_pages.scss */
+  /* line 261, resources/assets/styles/layouts/_pages.scss */
 
   .page-template-landing-page .wrap .banner .intro,
   .page-template-landing-page .wrap .content {
@@ -15806,26 +15806,26 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
     margin: 0 auto;
   }
 
-  /* line 265, resources/assets/styles/layouts/_pages.scss */
+  /* line 267, resources/assets/styles/layouts/_pages.scss */
 
   .page-template-landing-page .wrap .banner {
     font-size: 1.5rem;
   }
 
-  /* line 268, resources/assets/styles/layouts/_pages.scss */
+  /* line 270, resources/assets/styles/layouts/_pages.scss */
 
   .page-template-landing-page .wrap .banner h1 {
     display: none;
   }
 
-  /* line 272, resources/assets/styles/layouts/_pages.scss */
+  /* line 274, resources/assets/styles/layouts/_pages.scss */
 
   .page-template-landing-page .wrap .banner .intro {
     padding: 0 15px;
   }
 }
 
-/* line 282, resources/assets/styles/layouts/_pages.scss */
+/* line 284, resources/assets/styles/layouts/_pages.scss */
 
 .about-list img {
   height: 200px;
@@ -15834,7 +15834,7 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   width: 100%;
 }
 
-/* line 288, resources/assets/styles/layouts/_pages.scss */
+/* line 290, resources/assets/styles/layouts/_pages.scss */
 
 .about-list .btn,
 .about-list .comment-form input[type="submit"],
@@ -15849,7 +15849,7 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   margin-top: 5px;
 }
 
-/* line 296, resources/assets/styles/layouts/_pages.scss */
+/* line 298, resources/assets/styles/layouts/_pages.scss */
 
 .about-list .btn.team,
 .about-list .comment-form input.team[type="submit"],
@@ -15859,7 +15859,7 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   background-color: #29B6F6;
 }
 
-/* line 300, resources/assets/styles/layouts/_pages.scss */
+/* line 302, resources/assets/styles/layouts/_pages.scss */
 
 .about-list .btn.partners,
 .about-list .comment-form input.partners[type="submit"],
@@ -15869,7 +15869,7 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   background-color: #003571;
 }
 
-/* line 310, resources/assets/styles/layouts/_pages.scss */
+/* line 312, resources/assets/styles/layouts/_pages.scss */
 
 .wrap.container .home-slider .owl-item .item img {
   height: 250px;
@@ -15877,7 +15877,7 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
      object-fit: cover;
 }
 
-/* line 315, resources/assets/styles/layouts/_pages.scss */
+/* line 317, resources/assets/styles/layouts/_pages.scss */
 
 .wrap.container .home-slider .owl-item .item .content {
   width: 100%;
@@ -15894,7 +15894,7 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   height: 80px;
 }
 
-/* line 328, resources/assets/styles/layouts/_pages.scss */
+/* line 330, resources/assets/styles/layouts/_pages.scss */
 
 .wrap.container .home-slider .owl-nav {
   width: 100%;
@@ -15903,7 +15903,7 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   top: 50%;
 }
 
-/* line 335, resources/assets/styles/layouts/_pages.scss */
+/* line 337, resources/assets/styles/layouts/_pages.scss */
 
 .wrap.container .home-slider .owl-nav button.owl-prev,
 .wrap.container .home-slider .owl-nav button.owl-next {
@@ -15912,7 +15912,7 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
   background-repeat: no-repeat;
 }
 
-/* line 341, resources/assets/styles/layouts/_pages.scss */
+/* line 343, resources/assets/styles/layouts/_pages.scss */
 
 .wrap.container .home-slider .owl-nav button.owl-prev:hover,
 .wrap.container .home-slider .owl-nav button.owl-next:hover {
@@ -15920,7 +15920,7 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
 }
 
 @media (max-width: 768px) {
-  /* line 359, resources/assets/styles/layouts/_pages.scss */
+  /* line 361, resources/assets/styles/layouts/_pages.scss */
 
   .wrap.container .home-slider .owl-nav button.owl-prev,
   .wrap.container .home-slider .owl-nav button.owl-next {
@@ -15928,19 +15928,19 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
     width: 15px;
   }
 
-  /* line 365, resources/assets/styles/layouts/_pages.scss */
+  /* line 367, resources/assets/styles/layouts/_pages.scss */
 
   .wrap.container .home-slider .owl-nav button.owl-prev {
     left: -10px;
   }
 
-  /* line 369, resources/assets/styles/layouts/_pages.scss */
+  /* line 371, resources/assets/styles/layouts/_pages.scss */
 
   .wrap.container .home-slider .owl-nav button.owl-next {
     right: -10px;
   }
 
-  /* line 375, resources/assets/styles/layouts/_pages.scss */
+  /* line 377, resources/assets/styles/layouts/_pages.scss */
 
   .wrap.container .home-slider .owl-item {
     padding: 0 20px;
@@ -15948,13 +15948,13 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
 }
 
 @media (min-width: 768px) {
-  /* line 383, resources/assets/styles/layouts/_pages.scss */
+  /* line 385, resources/assets/styles/layouts/_pages.scss */
 
   .wrap.container .home-slider .owl-item .item img {
     height: 350px;
   }
 
-  /* line 387, resources/assets/styles/layouts/_pages.scss */
+  /* line 389, resources/assets/styles/layouts/_pages.scss */
 
   .wrap.container .home-slider .owl-item .item .content {
     font-size: 24px;
@@ -15963,44 +15963,44 @@ footer.content-info .site-info .footer-nav .menu-footer-menu li.alignright {
 }
 
 @media (min-width: 992px) {
-  /* line 396, resources/assets/styles/layouts/_pages.scss */
+  /* line 398, resources/assets/styles/layouts/_pages.scss */
 
   .wrap.container .home-slider .owl-item {
     padding: 0 51px;
   }
 
-  /* line 399, resources/assets/styles/layouts/_pages.scss */
+  /* line 401, resources/assets/styles/layouts/_pages.scss */
 
   .wrap.container .home-slider .owl-item .item {
     padding: 0 20px;
   }
 
-  /* line 402, resources/assets/styles/layouts/_pages.scss */
+  /* line 404, resources/assets/styles/layouts/_pages.scss */
 
   .wrap.container .home-slider .owl-item .item img {
     height: 450px;
   }
 
-  /* line 406, resources/assets/styles/layouts/_pages.scss */
+  /* line 408, resources/assets/styles/layouts/_pages.scss */
 
   .wrap.container .home-slider .owl-item .item .content {
     width: 80%;
   }
 }
 
-/* line 417, resources/assets/styles/layouts/_pages.scss */
+/* line 419, resources/assets/styles/layouts/_pages.scss */
 
 .people-list .social-contact {
   font-size: 1.2rem;
 }
 
-/* line 420, resources/assets/styles/layouts/_pages.scss */
+/* line 422, resources/assets/styles/layouts/_pages.scss */
 
 .people-list .social-contact a {
   margin-right: 10px;
 }
 
-/* line 428, resources/assets/styles/layouts/_pages.scss */
+/* line 430, resources/assets/styles/layouts/_pages.scss */
 
 .lab-life-list .row {
   margin-bottom: 20px;

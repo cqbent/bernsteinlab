@@ -1,9 +1,11 @@
 .page {
-  .content {
-    .wp-post-image {
-      max-width: 300px;
-      float: right;
-      margin-left: 20px;
+  &:not(.home) {
+    .content {
+      .wp-post-image {
+        max-width: 300px;
+        float: right;
+        margin-left: 20px;
+      }
     }
   }
   // research landing page

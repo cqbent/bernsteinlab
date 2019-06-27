@@ -32,7 +32,7 @@
               <p><strong>Broad Institute</strong><br />
               415 Main Street, Room 6041<br />
               Cambridge, MA</p>
-              <a href="/research/broad-institute-epigenomics-program/" class="btn btn-primary">More</a>
+              <a href="/broad-institute-epigenomics-program" class="btn btn-primary">More</a>
             </div>
           </div>
 
