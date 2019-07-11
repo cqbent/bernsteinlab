@@ -192,7 +192,8 @@ function bernstein_latest_news() {
 	$query  = new \WP_Query( $args );
 	if ( $query->have_posts() ) {
 		$output = '
-      <div class="container">';
+      <div class="container">
+      	<h3>Latest News</h3>';
 		while ( $query->have_posts() ) {
 			$query->the_post();
 			$img = get_the_post_thumbnail();
@@ -370,20 +371,23 @@ function bernstein_research_people($object) {
 	return $output;
 }
 
-function bernstein_research_publications($object) {
+function bernstein_research_publications($publications) {
 	$output = '';
-	if ($object) {
-		foreach($object as $post) {
+	//var_dump($publications);
+	if ($publications) {
+		foreach($publications as $pub) {
+			setup_postdata($pub);
 			$output .= '
 			<div class="publications-list">
-				<div class="image"><a href="'.get_the_permalink($post->ID).'">'.get_the_post_thumbnail($post->ID, 'full').'</a></div>
+				<div class="image"><a href="'.get_the_permalink($pub->ID).'">'.get_the_post_thumbnail($pub->ID, 'full').'</a></div>
 				<div class="content">
-					<div class="title"><a href="'.get_the_permalink($post->ID).'">'.get_the_title($post->ID).'</a></div>
-					<div class="excerpt">'.get_the_excerpt($post->ID).'</div>
+					<div class="title"><a href="'.get_the_permalink($pub->ID).'">'.get_the_title($pub->ID).'</a></div>
+					<div class="excerpt">'.get_the_excerpt($pub->ID).'</div>
 				</div>
 			</div>
 			';
 		}
+		wp_reset_postdata();
 	}
 	return $output;
 }

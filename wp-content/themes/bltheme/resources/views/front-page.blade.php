@@ -43,7 +43,8 @@
       <?php print bernstein_latest_news(); ?>
     </div>
     <div class="research container">
-      <?php print do_shortcode('[research_list cols="6"]'); ?>
+      <h3>Research Areas</h3>
+      <?php print do_shortcode('[research_list]'); ?>
     </div>
   @endwhile
 @endsection

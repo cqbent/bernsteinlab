@@ -28,7 +28,7 @@ header.banner {
     margin-left: 20px;
 
     img {
-      width: 300px;
+      width: 240px;
       height: auto;
       transition: all 0.3s ease;
     }
@@ -230,6 +230,12 @@ header.banner {
           }
         }
       }
+    }
+  }
+
+  @media (min-width: $screen-xs-min) {
+    .brand img {
+      width: 300px;
     }
   }
 
