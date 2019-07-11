@@ -282,7 +282,7 @@ function bernstein_people_by_role() {
 			'tax_query'   => array(
 				array(
 					'taxonomy' => 'roles',
-					'terms'    => $role,
+					'terms'    => $role->term_id,
 					'field'    => 'term_id'
 				)
 			)
